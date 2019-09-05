@@ -2,8 +2,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1, h3 {
   font-weight: 600;
+}
+
+h4 {
+  color: #2D9CDB;
+  font-weight: bold;
 }
 
 /* WELCOME PART*/
@@ -11,6 +16,30 @@ h1 {
   background-image: url("../images/welcome-image.png");
   background-color: #808000;
   background-size: cover;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+#welcome-part::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -moz-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 1) 100%);
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 1) 100%);
+}
+
+#welcome-part .container {
+  position: relative;
+}
+
+.welcome-button-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .navigation-menu {
@@ -18,6 +47,12 @@ h1 {
   font-size: 13px;
   padding: 15px;
   font-weight: 600;
+}
+
+#navigation-bar {
+  border-bottom: solid;
+  border-color: #d3d3d34a;
+  border-width: 1px;
 }
 
 #navigation-bar.scrolled {
@@ -70,13 +105,15 @@ h1 {
 }
 
 .welcome-button-right button {
-  font-size: 13px;
-  color: #2D9CDB;
-  background: white;
-  border-radius: 10px;
-  padding: 12px 47px;
+  font-size: 11px;
+  border-radius: 70px;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: #2D9CDB;
   box-shadow: 0 5px 10px 0 lightgrey;
   margin: 12px;
+  text-align: center;
 }
 
 /*WELCOME PART CARDS*/
@@ -92,7 +129,7 @@ h1 {
   padding: 15px;
 }
 
-.cards-padding {
+.cards-carousel-padding {
   padding: 20px 125px;
 }
 
@@ -124,6 +161,7 @@ h1 {
 }
 
 .image-rounded {
+  box-shadow: 0 5px 6px 0 #adb5bd;
   border-radius: 5px;
 }
 
@@ -133,8 +171,85 @@ h1 {
   margin: auto;
 }
 
-/*SLIDER HEADING*/
+.text-description p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  word-spacing: 8px;
+  line-height: 25px;
+}
 
-.parfums-slider-heading {
+.certificate-click-line {
+  border: none;
+  border-bottom: dashed;
+  border-color: #2D9CDB;
+  border-width: 1px;
+}
+
+/*SLIDER HEADING*/
+#parfum-catalog-head {
+  padding: 80px 0 30px;
+  background-color: #ECF8FF;
+}
+
+.catalog-title {
   text-align: center;
+}
+
+.gender-choosing-buttons {
+  background-color: transparent;
+  border: none;
+  border-bottom: dashed;
+  border-width: 1px;
+  margin: 20px 50px;
+  font-size: 20px;
+  color: #2D9CDB;
+}
+
+/*SLIDERS CAROUSEL*/
+#catalog-slider {
+  background-color: #ECF8FF;
+}
+
+.catalog-sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog-text {
+  padding-left: 25px;
+}
+
+.catalog-text-p-1 {
+  padding-top: 12px;
+}
+
+.catalog-text-p-2 {
+  border: solid;
+  width: 25%;
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  text-align: center;
+  border-color: #2D9CDB;
+  border-width: 1px;
+  color: #2D9CDB;
+}
+
+.catalog-slider-button {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  background: #2D9CDB;
+  border-radius: 10px;
+  padding: 16px 45px;
+  box-shadow: 0 5px 10px 0 lightgrey;
+}
+
+.vector-button {
+  background-color: transparent;
+  width: 49px;
+  height: 51px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.3);
 }
