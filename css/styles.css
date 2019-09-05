@@ -1,0 +1,140 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+/* WELCOME PART*/
+#welcome-part {
+  background-image: url("../images/welcome-image.png");
+  background-color: #808000;
+  background-size: cover;
+}
+
+.navigation-menu {
+  background-color: transparent;
+  font-size: 13px;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#navigation-bar.scrolled {
+  background-color: #333333 !important;
+  transition: background-color 200ms linear;
+}
+
+.logo {
+  width: 92px;
+}
+
+.ru-ro {
+  color: white;
+}
+
+.navigation-elements {
+  color: white;
+}
+
+.left-part-links {
+  margin-right: 30px;
+}
+
+.contact-phone {
+  font-size: 18px;
+}
+
+.contact {
+  font-size: 12px;
+  text-align: center;
+}
+
+.welcome-text {
+  padding: 100px 35px;
+  color: white;
+}
+
+.welcome-button {
+  font-size: 13px;
+  color: white;
+  background: #2D9CDB;
+  border-radius: 10px;
+  padding: 16px 80px;
+  margin-top: 12px;
+  box-shadow: 0 5px 10px 0 lightgrey;
+}
+
+.big-heading {
+  padding: 54px;
+}
+
+.welcome-button-right button {
+  font-size: 13px;
+  color: #2D9CDB;
+  background: white;
+  border-radius: 10px;
+  padding: 12px 47px;
+  box-shadow: 0 5px 10px 0 lightgrey;
+  margin: 12px;
+}
+
+/*WELCOME PART CARDS*/
+#welcome-cards {
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+.cards {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(45, 156, 219, 0.5);
+  padding: 15px;
+}
+
+.cards-padding {
+  padding: 20px 125px;
+}
+
+.cards-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 60px;
+}
+
+.cards-centering {
+  margin: 0 auto;
+}
+
+/*ADVANTAGES PART*/
+#parfums-advantages {
+  background-color: #ECF8FF;
+}
+
+.advantages-title {
+  text-align: center;
+  padding: 50px 60px;
+}
+
+.parfum-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.image-rounded {
+  border-radius: 5px;
+}
+
+.text-description {
+  padding: 20px;
+  font-size: 11px;
+  margin: auto;
+}
+
+/*SLIDER HEADING*/
+
+.parfums-slider-heading {
+  text-align: center;
+}
