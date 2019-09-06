@@ -428,3 +428,21 @@ h5, h6 {
 .cards-work-content {
   padding-top: 55px;
 }
+
+/*FOOTER PART*/
+#footer {
+  background-color: #ECF8FF;
+}
+
+.footer-part {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  color: #222222;
+  padding: 62px 0 20px;
+}
+
+.footer-icons {
+  font-size: 25px;
+  color: #475993;
+}
