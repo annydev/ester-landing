@@ -102,7 +102,8 @@ h5, h6 {
   border-radius: 10px;
   padding: 16px 80px;
   margin-top: 12px;
-  box-shadow: 0 5px 10px 0 lightgrey;
+  box-shadow: 0 2px 4px 0 black;
+  border: none;
 }
 
 .big-heading {
@@ -110,13 +111,14 @@ h5, h6 {
 }
 
 .welcome-button-right button {
+  border: none;
   font-size: 11px;
   border-radius: 70px;
   width: 80px;
   height: 80px;
   color: white;
   background: #2D9CDB;
-  box-shadow: 0 5px 10px 0 lightgrey;
+  box-shadow: 0 2px 4px 0 black;
   margin: 12px;
   text-align: center;
 }
