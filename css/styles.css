@@ -124,7 +124,8 @@ h5, h6 {
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #FFFFFF;;
+  border-color: #FFFFFF;
+  ;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -307,6 +308,7 @@ h5, h6 {
 
 /*BEING SALES SECTION*/
 #being-sales {
+  padding-bottom: 128px;
   background-color: #333333;
 }
 
@@ -327,4 +329,102 @@ h5, h6 {
 .cards-content {
   padding: 0;
   margin-top: 12px;
+}
+
+/* TWO PARTS*/
+#buy-parfums-for-commerce {
+  padding-bottom: 21px;
+  background-color: #ECF8FF;
+}
+
+.two-parts {
+  box-shadow: 0 2px 19px 0 #c1dddc;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 0;
+}
+
+.right-part {
+  padding: 43px 170px 28px 22px;
+  color: black;
+}
+
+.right-part button {
+  font-size: 13px;
+  color: #FFFFFF;
+  background: #2D9CDB;
+  border-radius: 10px;
+  padding: 16px 63px;
+  margin-top: 12px;
+  box-shadow: 0 2px 4px 0 #6c757d;
+  border: none;
+}
+
+.left-part {
+  padding: 43px 36px 28px 22px;
+  color: #FFFFFF;
+  background-color: #2D9CDB;
+}
+
+.left-part button {
+  font-size: 13px;
+  color: #2D9CDB;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 44px;
+  margin-top: 12px;
+  box-shadow: 0 2px 4px 0 #6c757d;
+  border: none;
+}
+
+/*HOW IT WORKS*/
+#how-it-works {
+  background-color: #ECF8FF;
+}
+
+.how-it-works-heading {
+  text-align: center;
+  padding: 60px 0 0;
+}
+
+.how-it-works-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.how-it-works-cards h5 {
+  color: black;
+}
+
+.work-info-cards {
+  padding: 63px 12px 9px;
+  margin: 74px 20px;
+  background-color: transparent;
+  border: solid;
+  border-color: #2d9cdb33;
+  border-width: 1px;
+}
+
+.work-info-cards-p {
+  color: #222222b3;
+  font-size: 14px;
+}
+
+.circle-numbers {
+  text-align: center;
+  border-radius: 31px;
+  width: 60px;
+  height: 60px;
+  font-size: 38px;
+  margin: auto;
+  position: relative;
+  margin-top: -99px;
+  background-color: #2D9CDB;
+  color: white;
+}
+
+.cards-work-content {
+  padding-top: 55px;
 }
