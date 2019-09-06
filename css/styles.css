@@ -11,6 +11,11 @@ h4 {
   font-weight: bold;
 }
 
+h5, h6 {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
 /* WELCOME PART*/
 #welcome-part {
   background-image: url("../images/welcome-image.png");
@@ -116,6 +121,14 @@ h4 {
   text-align: center;
 }
 
+.custom-toggler.navbar-toggler {
+  border-color: #FFFFFF;;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /*WELCOME PART CARDS*/
 #welcome-cards {
   background-color: #333333;
@@ -161,17 +174,17 @@ h4 {
 }
 
 .image-rounded {
-  box-shadow: 0 5px 6px 0 #adb5bd;
+  box-shadow: 0 0px 15px 0 #cccccc;
   border-radius: 5px;
 }
 
 .text-description {
   padding: 20px;
-  font-size: 11px;
   margin: auto;
 }
 
 .text-description p {
+  font-size: 12px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   word-spacing: 8px;
@@ -252,4 +265,64 @@ h4 {
   border: solid;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.3);
+}
+
+/*CLIENTS FEEDBACK*/
+#client-feedback {
+  background-color: #333333;
+}
+
+.client-card {
+  background-color: transparent;
+  color: #FFFFFF;
+  margin: 20px;
+  border: none;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  padding: 12px 58px;
+}
+
+.client-body-text {
+  font-size: 12px;
+  color: #ffffffcc;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.feedback-heading {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 75px 50px 40px;
+}
+
+.fa {
+  margin-right: 12px;
+}
+
+/*BEING SALES SECTION*/
+#being-sales {
+  background-color: #333333;
+}
+
+.being-sales-heading {
+  text-align: center;
+  padding: 85px 0 40px;
+  color: #FFFFFF;
+}
+
+.sale-card {
+  padding: 20px;
+  border: solid;
+  border-color: #2d9cdb80;
+  border-width: 1px;
+  background-color: transparent;
+}
+
+.cards-content {
+  padding: 0;
+  margin-top: 12px;
 }
