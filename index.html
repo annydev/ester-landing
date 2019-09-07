@@ -42,12 +42,14 @@
               <a class="nav-link navigation-elements left-part-links" href="#footer">Контакты</a>
             </li>
             <li class="nav-item navigation-elements">
-              <div class="contact-phone">
-                <button type="submit" name="button">+373 22 89 67 67</button>+373 22 89 67 67
-              </div>
-              <div class="contact">
-                Телефон для связи
-              </div>
+              <a href="tel:+37322896767">
+                <div class="contact-phone">
+                  +373 22 89 67 67
+                </div>
+                <div class="contact">
+                  Телефон для связи
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -61,7 +63,7 @@
           <h1>Автопарфюм,</h1>
           <h1> а не ароматизатор!</h1>
           <p>Твой любимый парфюм теперь у тебя в автомобиле.</p>
-          <button class="welcome-button" type="submit" name="button">Заказать</button>
+          <button class="welcome-button" data-toggle="modal" data-target="#modal-1" type="submit" name="button">Заказать</button>
         </div>
       </div>
       <div class="welcome-button-right">
@@ -297,15 +299,19 @@
   </section>
   <section id="buy-parfums-for-commerce">
     <div class="container two-parts">
-      <div class="right-part">
-        <h3>Зарабатывайте, освободив всего одну полочку в своем торговом помещении.</h3>
-        <p>Оказываем поддержку и проводим консультации перед стартом продаж.</p>
-        <button type="submit" name="button">Стать дилером</button>
+      <div class="">
+        <div class="right-part">
+          <h3>Зарабатывайте, освободив всего одну полочку в своем торговом помещении.</h3>
+          <p>Оказываем поддержку и проводим консультации перед стартом продаж.</p>
+          <button type="submit" name="button">Стать дилером</button>
+        </div>
       </div>
-      <div class="left-part">
-        <h3>Закажите партию автопарфюма Ester на экспорт.</h3>
-        <p>Отгружаем партию в течение 5 дней после подписания контракта.</p>
-        <button type="submit" name="button">Заказать партию</button>
+      <div class="">
+        <div class="left-part">
+          <h3>Закажите партию автопарфюма Ester на экспорт.</h3>
+          <p>Отгружаем партию в течение 5 дней после подписания контракта.</p>
+          <button type="submit" name="button">Заказать партию</button>
+        </div>
       </div>
     </div>
   </section>
@@ -366,6 +372,60 @@
       <p>sales@carparfume.com</p>
       <i class="fa fa-facebook-official footer-icons" aria-hidden="true"></i>
     </div>
+  </section>
+  <section id="modals">
+    <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-part">
+          <div class="modal-header modal-heading">
+            <h4 class="modal-title">Какой аромат хотите заказать?</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="dropdown">
+                <button class="dropdown-toggle modal-dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Аромат</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Paco Rabanne – One Million</a>
+                  <a class="dropdown-item" href="#">Bulgari – Aqua Amara</a>
+                  <a class="dropdown-item" href="#">Giorgio Armani – Acqua di Gio</a>
+                  <a class="dropdown-item" href="#">Christian Dior – Sauvage</a>
+                  <a class="dropdown-item" href="#">Versace – Eros</a>
+                  <a class="dropdown-item" href="#">Tom Ford – Neroli Portofino</a>
+                  <a class="dropdown-item" href="#">Chanel – Allure Homme Sport</a>
+                  <a class="dropdown-item" href="#">YSL – La Nuit de l’Homme</a>
+                  <a class="dropdown-item" href="#">Paco Rabanne – Invictus</a>
+                  <a class="dropdown-item" href="#">Carolina Herrera – 212MEN</a>
+                  <a class="dropdown-item" href="#">Coco Chanel – Mademoiselle</a>
+                  <a class="dropdown-item" href="#">Paco Rabanne - Lady Million</a>
+                  <a class="dropdown-item" href="#">Armani – Because It’s You: Because It’s You</a>
+                  <a class="dropdown-item" href="#">YSL – Black Opium</a>
+                  <a class="dropdown-item" href="#">Hugo Boss – The Scent</a>
+                  <a class="dropdown-item" href="#">Armani - Si Passione</a>
+                  <a class="dropdown-item" href="#">Tom Ford – Tobacco Vanilla</a>
+                  <a class="dropdown-item" href="#">Dolce Gabbana – Light Blue</a>
+                  <a class="dropdown-item" href="#">Christian Dior – Ambre Nuit</a>
+                  <a class="dropdown-item" href="#">Kilian - Good girl gone bad</a>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Имя" aria-label="Имя" class="form-control"></input>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control"></input>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Адрес доставки" aria-label="Адрес доставки" class="form-control"></input>
+              </div>
+            </form>
+            <div class="modal-footer mode-footer">
+              <button class="modal-welcome-button welcome-button" type="submit" name="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

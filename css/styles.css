@@ -70,11 +70,11 @@ h5, h6 {
 }
 
 .ru-ro {
-  color: white;
+  color: #FFFFFF;
 }
 
 .navigation-elements {
-  color: white;
+  color: #FFFFFF;
 }
 
 .left-part-links {
@@ -82,22 +82,24 @@ h5, h6 {
 }
 
 .contact-phone {
+  color: #FFFFFF;
   font-size: 18px;
 }
 
 .contact {
+  color: #FFFFFF;
   font-size: 12px;
   text-align: center;
 }
 
 .welcome-text {
   padding: 100px 35px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .welcome-button {
   font-size: 13px;
-  color: white;
+  color: #FFFFFF;
   background: #2D9CDB;
   border-radius: 10px;
   padding: 16px 80px;
@@ -116,7 +118,7 @@ h5, h6 {
   border-radius: 70px;
   width: 80px;
   height: 80px;
-  color: white;
+  color: #FFFFFF;
   background: #2D9CDB;
   box-shadow: 0 2px 4px 0 black;
   margin: 12px;
@@ -140,7 +142,7 @@ h5, h6 {
 
 .cards {
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
   border: 1px solid rgba(45, 156, 219, 0.5);
   padding: 15px;
 }
@@ -150,7 +152,7 @@ h5, h6 {
 }
 
 .cards-title {
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   margin-bottom: 45px;
   margin-top: 60px;
@@ -308,7 +310,7 @@ h5, h6 {
 
 /*BEING SALES SECTION*/
 #being-sales {
-  padding-bottom: 128px;
+  padding-bottom: 295px;
   background-color: #333333;
 }
 
@@ -333,18 +335,25 @@ h5, h6 {
 
 /* TWO PARTS*/
 #buy-parfums-for-commerce {
+  margin-top: -200px;
+  margin-bottom: -200px;
   padding-bottom: 21px;
-  background-color: #ECF8FF;
 }
 
 .two-parts {
-  box-shadow: 0 2px 19px 0 #c1dddc;
   display: grid;
   grid-template-columns: 60% 40%;
   padding: 0;
 }
 
 .right-part {
+  background-color: #ECF8FF;
+  background-image: url("../images/man-with-parfum.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin: 12px;
+  box-shadow: 0 -3px 20px 0 #00408561;
   padding: 43px 170px 28px 22px;
   color: black;
 }
@@ -361,6 +370,8 @@ h5, h6 {
 }
 
 .left-part {
+  margin: 12px;
+  box-shadow: 0 -3px 20px 0 #00408561;
   padding: 43px 36px 28px 22px;
   color: #FFFFFF;
   background-color: #2D9CDB;
@@ -379,6 +390,7 @@ h5, h6 {
 
 /*HOW IT WORKS*/
 #how-it-works {
+  padding-top: 200px;
   background-color: #ECF8FF;
 }
 
@@ -445,4 +457,38 @@ h5, h6 {
 .footer-icons {
   font-size: 25px;
   color: #475993;
+}
+
+/*MODALS*/
+#modals {
+  font-family: "Monsterrat", sans-serif;
+}
+
+.modal-part {
+  width: 70%;
+}
+
+.modal-heading {
+  border: none;
+  text-align: center;
+}
+
+.modal-heading h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+.mode-footer {
+  border: none;
+}
+
+.modal-footer button {
+  margin: auto;
+}
+
+.modal-dropdown-button {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
 }
