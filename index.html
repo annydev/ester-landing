@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse left-part-navigation" id="navbarText">
           <ul class="navbar-nav ml-auto navigation-elements">
             <li class="nav-item active">
-              <a class="nav-link navigation-elements left-part-links" href="#catalog-slider">Каталог ароматов<span class="sr-only">(current)</span></a>
+              <a class="nav-link navigation-elements left-part-links" href="#parfum-catalog-head">Каталог ароматов<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link navigation-elements left-part-links" href="#being-sales">Стать дилером</a>
@@ -126,7 +126,9 @@
       </div>
       <div class="parfum-description">
         <div class="text-description">
-          <h4 class="certificate-click-line">Сертификат – гарантия</h4>
+          <a href="#" data-toggle="modal" data-target="#certificateModal">
+            <h4 class="certificate-click-line">Сертификат – гарантия</h4>
+          </a>
           <p>Все ароматы гипоаллергенны и имеют соответствующий сертификат. Сертификат – гарантия того, что автопарфюм Ester абсолютно безвреден для аллергиков.</p>
         </div>
         <div class="">
@@ -175,9 +177,12 @@
           <div class="catalog-text">
             <h3>Paco Rabanne – One Million</h3>
             <p>Пьянящая, мощная смесь. Открывается нотками свежести и переходит в пряный аккорд аромата кожи. Захватывающая алхимия полная соблазна.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m1" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">1 из 10</p>
           </div>
@@ -191,9 +196,12 @@
             <p>Новый фланкер мужского аромата от Bulgari представляет новый виток в создании акватических духов. Композиция обогащена благородными ингредиентами, которые делают ее еще более роскошным, в то же время сохраняя отчетливый акватический,
               средиземноморский характер.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m2" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">2 из 10</p>
           </div>
@@ -206,9 +214,12 @@
             <h3>Giorgio Armani – Acqua di Gio</h3>
             <p>Средиземноморская история Acqua di Gio начинается со всплеска свежести, калабрийского бергамота, нероли и зеленого мандарина. Легкие, акватические оттенки смешиваются с розмарином, хурмой и теплым индонезийским пачули, создавая
               одновременно свежий и расслабляющий мужской аромат.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m3" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">3 из 10</p>
           </div>
@@ -221,9 +232,11 @@
             <h3>Christian Dior – Sauvage</h3>
             <p>Аромат заявлен, как радикально свежий, сырой и благородный одновременно. В составе преобладают тщательно отобранные натуральные ингредиенты. Свежие верхние ноты калабрийского бергамота сталкиваются с амброксаном, полученным из ценной
               амбры, и его древесным оттенком.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m4" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">4 из 10</p>
           </div>
@@ -235,9 +248,11 @@
           <div class="catalog-text">
             <h3>Versace – Eros</h3>
             <p>Это аромат для сильного, страстного мужчины – хозяина самому себе. Eros окутывает безукоризненные мужские черты в ауру интенсивной, энергичной и яркой смеси из свежих мятных листьев, итальянской лимонной цедры и зеленого яблока.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m5" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">5 из 10</p>
           </div>
@@ -251,9 +266,11 @@
             <p>Этот аромат идеально запечатлевает прохладный ветерок, сверкающую чистую воду и пышную листву Итальянской Ривьеры. В этом переосмыслении классической туалетной воды присутствуют свежие цитрусовые масла, удивительные цветочные нотки и
               янтарные оттенки, которые оставляют яркие и устойчивые впечатления.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m6" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">6 из 10</p>
           </div>
@@ -267,9 +284,11 @@
             <p>Живой, бодрящий аромат, в котором преобладают усиленные ноты свежести и чувственности. Аромат для мужчины, который любит свежий воздух и живет так, как ему хочется. Игристая свежесть итальянского мандарина, усиленная кристаллическим
               аккордом, смешивается с чистыми, интенсивными нотами кедра. Чувственные бобы тонка с оттенком миндаля и обволакивающими нотами белого мускуса оставляют глубокий и крепкий шлейф.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m7" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">7 из 10</p>
           </div>
@@ -284,9 +303,10 @@
               мужской туалетной воды начинается со сладкого, пряного кардамона и переходит к самому сердцу свежего бергамота, древесным ноткам виргинского кедра и яркой лаванды. Богатые заключительные ноты, в которые также входит землистый ветивер,
               оставляют за собой аромат, придающий некоторую тайну. Пользуйтесь этим парфюмом, чтобы четко обозначить свою силу и многогранность.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m8" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">8 из 10</p>
           </div>
@@ -301,9 +321,11 @@
               совмещены острый, захватывающий аромат грейпфрута и свежий аккорд, напоминающий о морской воде. Все это ведет к ароматическому сердцу жасмина и лаврового листа, и к финальному аккорду на основе дубового мха, который оставляет после себя
               сильное впечатление, идеально подходящее активному мужчине.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m9" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">9 из 10</p>
           </div>
@@ -319,15 +341,17 @@
               цветочным ароматом
               «петтитгрейн» в своих вступительных нотах. Сердце парфюма продолжает тему несколькими нотами, включая имбирь и гардению, а затем переходит к гладкой мульти-нотной основе насыщенного лабданума, напоминающего янтарь. Этот аромат отлично
               подходит и для работы, и для отдыха в любой весенний или летний день.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="m10" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i>
+            </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">10 из 10</p>
           </div>
         </div>
       </div>
-      <div class="women-parfums">
+      <div class="women-parfums d-none">
         <div class="catalog-sliders">
           <div class="catalog-image">
             <img class="img-fluid" src="https://dummyimage.com/500x483/000000/00ffc4.png&text=parfume-images" alt="">
@@ -336,11 +360,13 @@
             <h3>Coco Chanel – Mademoiselle</h3>
             <p>Это туалетная вода, выпущенная Chanel в 2002 году. Этот цитрусовый аромат создал Жак Полж. Эта версия легче и слаще той, что вышла через год после выхода оригинального парфюма и парфюмированной воды. Данному аромату присущи верхние
               ноты апельсина, бергамота и грейпфрута. В его средние ноты входят жасмин, роза и личи. Основные ноты состоят из пачули, бурбонная ваниль, ветивер и белый мускус. Это устойчивый аромат с умеренным шлейфом.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w1" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>1 из 10</p>
+            <p class="catalog-text-p-2">1 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -353,11 +379,12 @@
               африканский апельсиновый цвет. Теплые ноты меда надолго задерживаются после первого применения, делая упор на сладкие черты этого аромата своими золотистыми полутонами. Будучи разнообразным и женственным ароматом, Lady Million – это
               последний штрих, придающий вашему присутствию чарующий эффект.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w2" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button> <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>2 из 10</p>
+            <p class="catalog-text-p-2">2 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -368,11 +395,13 @@
             <h3>Armani – Because It’s You: Because It’s You </h3>
             <p>радостный, очаровательный и яркий аромат: попросту неотразимый, подобно спелой малине в своей совершенной и элегантной естественности в сочетании с нотами нероли. Аромат становится соблазнительным благодаря смеси ванили с мускусом,
               которая раскрывает его многослойную и невероятно глубокую чувственность.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w3" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>3 из 10</p>
+            <p class="catalog-text-p-2">3 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -383,11 +412,13 @@
             <h3>YSL – Black Opium</h3>
             <p>Брызгаясь туалетной водой Black Opium, вы выбираете роскошный и густой аромат. Это классический женский аромат, выпущенный в 2014 году Yves Saint Laurent, открывающийся верхними нотами розового перца и сладкого апельсинового цвета –
               прекрасный способ начать день со ощущения чистоты и свежести. Сердце аромата состоит из интенсивных, но очень знакомых нот кофе, смягченных сладкими чертами жасмина. В основе аромата лежат успокаивающие и уютные ноты теплой ванили.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w4" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>4 из 10</p>
+            <p class="catalog-text-p-2">4 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -398,11 +429,13 @@
             <h3>Hugo Boss – The Scent</h3>
             <p>К оригинальной парфюмированной воде теперь присоединилась и туалетная вода, создание которой вдохновила весенняя красота. Новый элегантный аромат открывается энергичным всплеском розового перца и зеленого мандарина, за которым следует
               букет сладких фрезий и оранжевого цвета. Заразительный аромат какао, лежащий в основе, удерживается все время, пока выветриваются более легкие верхние ноты.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w5" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>5 из 10</p>
+            <p class="catalog-text-p-2">5 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -414,11 +447,13 @@
             <p> Этот яркий, фруктово-цветочный аромат с нотами розы и древесной ванили был создан для страстной, женственной и свободной женщины. Яркий красный цвет бутылочки отражает суть страсти и, со слов самого мистера Армани, это «неотразимая
               смесь грации, силы и независимости духа».
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w6" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>6 из 10</p>
+            <p class="catalog-text-p-2">6 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -430,11 +465,13 @@
             <p>Оригинальный восточный пряный аромат со сладкими, ванильными, табачными, теплыми пряными и фруктовыми главными аккордами. Появившийся в 2007 году, этот аромат идеально подходит к вечерним нарядам осенью и зимой, а также обладает
               устойчивым шлейфом и сохраняется в течение долгого времени. Верхние ноты состоят из табака и пряностей, а в самом сердце – бобы тонка, ваниль, какао и табачный цветок. В основе аромата лежат ноты сухофруктов и древесины.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w7" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>7 из 10</p>
+            <p class="catalog-text-p-2">7 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -445,11 +482,13 @@
             <h3>Dolce Gabbana – Light Blue</h3>
             <p>Квинтэссенция радости жизни и соблазнения от Dolce&Gabbana. Вся суть солнечного дня заключена в этом живом, свежем, цветочном и фруктовом аромате, пробуждающем чувственность средиземноморской женщины.
             </p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="w8" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
-            <p>8 из 10</p>
+            <p class="catalog-text-p-2">8 из 10</p>
           </div>
         </div>
         <div class="catalog-sliders d-none">
@@ -460,9 +499,11 @@
             <h3>Christian Dior – Ambre Nuit</h3>
             <p class="catalog-text-p-1">Этот аромат балансирует на границе между двумя крайностями. В некотором роде, это ароматическое воплощение «Красавицы и чудовища». В этом аромате сочетаются глубокий, животный характер янтаря и нежная,
               бархатистая турецкая роза. Этот мощный дуэт подобен ночной волне янтаря, в которой во время притяжения друг ко другу противоположностей переплетаются сила и нежность.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <button name="9" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">9 из 10</p>
           </div>
@@ -473,10 +514,13 @@
           </div>
           <div class="catalog-text">
             <h3>Kilian - Good girl gone bad</h3>
-            <p class="catalog-text-p-1"> Отчасти невинный, отчасти сладострастный аромат с абсолютом османтуса с оттенком абрикоса, оранжевым цветом и абсолютом Майской розы, которые открывают аромат, сменяются искушенной соблазнительницей, взрывом трех сирен из мира цветов: абсолютом туберозы, жасмина и нарцисса.</p>
-            <button class="catalog-slider-button">Заказать этот аромат</button>
+            <p class="catalog-text-p-1"> Отчасти невинный, отчасти сладострастный аромат с абсолютом османтуса с оттенком абрикоса, оранжевым цветом и абсолютом Майской розы, которые открывают аромат, сменяются искушенной соблазнительницей, взрывом
+              трех сирен из мира цветов: абсолютом туберозы, жасмина и нарцисса.</p>
+            <button name="w10" class="catalog-slider-button">Заказать этот аромат</button>
             <button class="previous-button vector-button">
-              < </button> <button class="next-button vector-button">>
+              <i class="fas fa-chevron-left"></i> </button>
+            <button class="next-button vector-button">
+              <i class="fas fa-chevron-right"></i>
             </button>
             <p class="catalog-text-p-2">10 из 10</p>
           </div>
@@ -649,6 +693,135 @@
       </div>
     </div>
   </section>
+  <section id="map-heading">
+    <div class="container">
+      <div class="map-title">
+        <h1>Где купить автопарфюм?</h1>
+      </div>
+    </div>
+  </section>
+  <section id="map">
+    <div class="container map-container">
+      <div class="accordions">
+        <div class="accordion-item accordion-one">
+          <div class="card">
+            <div class="card-header d-flex accordion-title" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
+              <div class="flex-grow-1">
+                <span class="first-span">Буюканы</span>
+                <span class="second-span">(15 локаций)</span>
+              </div>
+              <div class="">
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+              <div class="card-body">
+                <div class="">
+                  str. Petru Movila, 41
+                </div>
+                <div class="">
+                  str. Bulgara, 39
+                </div>
+                <div class="">
+                  bd. Ștefan cel Mare, 12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item accordion-two">
+          <div class="card">
+            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseTwo" id="headingTwo">
+              <div class="flex-grow-1">
+                <span class="first-span">Чеканы</span>
+                <span class="second-span">(16 локаций)</span>
+              </div>
+              <div class="">
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne">
+              <div class="card-body">
+                <div class="">
+                  str. Petru Movila, 41
+                </div>
+                <div class="">
+                  str. Bulgara, 39
+                </div>
+                <div class="">
+                  bd. Ștefan cel Mare, 12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item accordion-three">
+          <div class="card">
+            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseThree" id="headingThree">
+              <div class="flex-grow-1">
+                <span class="first-span">Рышкановка</span>
+                <span class="second-span">(16 локаций)</span>
+              </div>
+              <div class="">
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingOne">
+              <div class="card-body">
+                <div class="">
+                  str. Petru Movila, 41
+                </div>
+                <div class="">
+                  str. Bulgara, 39
+                </div>
+                <div class="">
+                  bd. Ștefan cel Mare, 12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item accordion-four">
+          <div class="card">
+            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseFour" id="headingFour">
+              <div class="flex-grow-1">
+                <span class="first-span">Ботаника</span>
+                <span class="second-span">(16 локаций)</span>
+              </div>
+              <div class="">
+                <i class="fas fa-chevron-up"></i>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingOne">
+              <div class="card-body">
+                <div class="">
+                  str. Petru Movila, 41
+                </div>
+                <div class="">
+                  str. Bulgara, 39
+                </div>
+                <div class="">
+                  bd. Ștefan cel Mare, 12
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-part">
+        <div class="sticky-top embed-responsive embed-responsive-4by3 map-top">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.846379338017!2d28.85919841557511!3d47.043245179151334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cf87bbea26b%3A0x323cc1b2016c3ec1!2s16%2F1%2C%20Chisinau%2C%20Moldova!5e0!3m2!1sen!2s!4v1567966055250!5m2!1sen!2s"
+            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="footer">
     <div class="container footer-part">
       <h3>+373 22 89 67 67</h3>
@@ -671,33 +844,33 @@
             </div>
             <form>
               <select class="form-control select-parfums">
-                <option>Аромат</option>
-                <option>Paco Rabanne – One Million</option>
-                <option>Bulgari – Aqua Amara</option>
-                <option>Giorgio Armani – Acqua di Gio</option>
-                <option>Christian Dior – Sauvage</option>
-                <option>Versace – Eros</option>
-                <option>Tom Ford – Neroli Portofino</option>
-                <option>Chanel – Allure Homme Sport</option>
-                <option>YSL – La Nuit de l’Homme</option>
-                <option>Paco Rabanne – Invictus</option>
-                <option>Carolina Herrera – 212MEN</option>
-                <option>Coco Chanel – Mademoiselle</option>
-                <option>Paco Rabanne - Lady Million</option>
-                <option>Armani – Because It’s You: Because It’s You</option>
-                <option>YSL – Black Opium</option>
-                <option>Hugo Boss – The Scent</option>
-                <option>Armani - Si Passione</option>
-                <option>Tom Ford – Tobacco Vanilla</option>
-                <option>Dolce Gabbana – Light Blue</option>
-                <option>Christian Dior – Ambre Nuit</option>
-                <option>Kilian - Good girl gone bad</option>
+                <option value="" disabled selected>Аромат</option>
+                <option value="m1">Paco Rabanne – One Million</option>
+                <option value="m2">Bulgari – Aqua Amara</option>
+                <option value="m3">Giorgio Armani – Acqua di Gio</option>
+                <option value="m4">Christian Dior – Sauvage</option>
+                <option value="m5">Versace – Eros</option>
+                <option value="m6">Tom Ford – Neroli Portofino</option>
+                <option value="m7">Chanel – Allure Homme Sport</option>
+                <option value="m8">YSL – La Nuit de l’Homme</option>
+                <option value="m9">Paco Rabanne – Invictus</option>
+                <option value="m10">Carolina Herrera – 212MEN</option>
+                <option value="w1">Coco Chanel – Mademoiselle</option>
+                <option value="w2">Paco Rabanne - Lady Million</option>
+                <option value="w3">Armani – Because It’s You: Because It’s You</option>
+                <option value="w4">YSL – Black Opium</option>
+                <option value="w5">Hugo Boss – The Scent</option>
+                <option value="w6">Armani - Si Passione</option>
+                <option value="w7">Tom Ford – Tobacco Vanilla</option>
+                <option value="w8">Dolce Gabbana – Light Blue</option>
+                <option value="w9">Christian Dior – Ambre Nuit</option>
+                <option value="w10">Kilian - Good girl gone bad</option>
               </select>
               <div class="form-group">
                 <input type="text" placeholder="Имя" aria-label="Имя" class="form-control"></input>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
+                <input type="number" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
               </div>
               <div class="form-group">
                 <input type="text" placeholder="Адрес доставки" aria-label="Адрес доставки" class="form-control"></input>
@@ -731,10 +904,10 @@
                 <input type="text" placeholder="Имя" aria-label="Имя" class="form-control"></input>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
+                <input type="number" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Ваш e-mail" aria-label="Ваш e-mail" class="form-control"></input>
+                <input type="email" placeholder="Ваш e-mail" aria-label="Ваш e-mail" class="form-control"></input>
               </div>
               <div class="form-group d-none if-statement">
                 <p>Оставьте номер телефона, чтобы мы могли с вами связаться.</p>
@@ -765,10 +938,10 @@
                 <input type="text" placeholder="Имя" aria-label="Имя" class="form-control"></input>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
+                <input type="number" placeholder="Номер телефона *" aria-label="Номер телефона *" class="form-control mode-phone"></input>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Ваш e-mail" aria-label="Ваш e-mail" class="form-control"></input>
+                <input type="email" placeholder="Ваш e-mail" aria-label="Ваш e-mail" class="form-control"></input>
               </div>
               <div class="form-group d-none if-statement">
                 <p>Оставьте номер телефона, чтобы мы могли с вами связаться.</p>
@@ -783,18 +956,39 @@
     </div>
     <div class="modal fade" id="afterOrder" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content after-order-content">
           <div class="modal-headeding">
-            <h5 class="modal-title">Спасибо, мы получили заявку. Наш менеджер скоро с вами свяжется.</h5>
+            <h5 class="modal-title after-order-heading">Спасибо, мы получили заявку. Наш менеджер скоро с вами свяжется.</h5>
             <div class="close-button" data-dismiss="modal">
               <i class="fas fa-times"></i>
             </div>
           </div>
-          <div class="modal-body">
+          <div class="modal-body after-order-body">
             <button class="welcome-button">Ок</button>
           </div>
         </div>
       </div>
+    </div>
+    <div class="modal fade" id="certificateModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="certificate-container">
+            <div class="certificate-images">
+              <img class="img-fluid active" src="images/certificate1.png" alt="">
+              <img class="img-fluid d-none" src="https://dummyimage.com/519x636/000000/00ffc4.png&text=page2" alt="">
+              <img class="img-fluid d-none" src="https://dummyimage.com/519x636/000000/00ffc4.png&text=page3" alt="">
+              <img class="img-fluid d-none" src="https://dummyimage.com/519x636/000000/00ffc4.png&text=page4" alt="">
+            </div>
+            <button class="previous-certificate-button vector-button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-certificate-button vector-button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="https://kit.fontawesome.com/20cafeafe6.js"></script>

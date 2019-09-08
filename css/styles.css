@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -231,7 +235,6 @@ h5, h6 {
   color: black;
 }
 
-
 /*SLIDERS CAROUSEL*/
 #catalog-slider {
   background-color: #ECF8FF;
@@ -451,6 +454,82 @@ h5, h6 {
   padding-top: 55px;
 }
 
+/*MAP HEADING*/
+#map-heading {
+  background-color: #ECF8FF;
+}
+
+.map-title {
+  padding: 57px 0 30px;
+  text-align: center;
+}
+
+/*MAPS PART*/
+#map {
+  background-color: #ECF8FF;
+}
+
+.map-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.map-container h5 {
+  color: black;
+}
+
+.map-top {
+  top: 95px;
+}
+
+.map-part {
+  padding: 15px;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+.accordion-title {
+  background-color: #2D9CDB;
+  color: #FFFFFF;
+}
+
+.first-span {
+  font-weight: 600;
+}
+
+.second-span {
+  font-size: 12px;
+}
+
+.accordions {
+  padding: 15px;
+}
+
+.accordions .accordion-title .fa-chevron-up {
+  display: block;
+}
+
+.accordions .accordion-title .fa-chevron-down {
+  display: none;
+}
+
+.accordions .accordion-title.collapsed {
+  background-color: #ECF8FF;;
+  color: black;
+  border: 1px solid #2d9cdb;
+  border-radius: 5px;
+}
+
+.accordions .accordion-title.collapsed .fa-chevron-up {
+  display: none;
+}
+
+.accordions .accordion-title.collapsed .fa-chevron-down {
+  display: block;
+}
+
 /*FOOTER PART*/
 #footer {
   background-color: #ECF8FF;
@@ -523,4 +602,44 @@ h5, h6 {
   color: #FF0000;
   font-size: 13px;
   margin: 0 21px;
+}
+
+.after-order-content {
+  width: 70%;
+}
+
+.after-order-heading {
+  text-align: center;
+  color: #222222;
+  font-weight: 500;
+  padding: 27px 51px 14px;
+  word-spacing: 2px;
+}
+
+.after-order-body {
+  margin: auto;
+}
+
+.certificate-container {
+  position: relative;
+  text-align: center;
+  padding: 25px;
+}
+
+.certificate-container .previous-certificate-button {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  background-color: white;
+}
+
+.certificate-container .next-certificate-button {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  background-color: white;
 }
