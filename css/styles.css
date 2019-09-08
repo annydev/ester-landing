@@ -197,6 +197,7 @@ h5, h6 {
 }
 
 .certificate-click-line {
+  display: inline-block;
   border: none;
   border-bottom: dashed;
   border-color: #2D9CDB;
@@ -223,6 +224,14 @@ h5, h6 {
   color: #2D9CDB;
 }
 
+.gender-choosing-buttons.active {
+  border: none;
+  border-bottom: dashed;
+  border-width: 1px;
+  color: black;
+}
+
+
 /*SLIDERS CAROUSEL*/
 #catalog-slider {
   background-color: #ECF8FF;
@@ -242,6 +251,7 @@ h5, h6 {
 }
 
 .catalog-text-p-2 {
+  font-weight: bold;
   border: solid;
   width: 25%;
   margin-top: 15px;
@@ -304,7 +314,7 @@ h5, h6 {
   padding: 75px 50px 40px;
 }
 
-.fa {
+.fab {
   margin-right: 12px;
 }
 
@@ -469,14 +479,22 @@ h5, h6 {
 }
 
 .modal-heading {
-  border: none;
+  margin-bottom: 15px;
   text-align: center;
 }
 
+.modal-heading-text {
+  text-align: center;
+  position: relative;
+  padding: 15px;
+}
+
 .modal-heading h4 {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
   color: black;
+  padding: 0 32px;
+  margin-bottom: 7px;
 }
 
 .mode-footer {
@@ -487,8 +505,22 @@ h5, h6 {
   margin: auto;
 }
 
-.modal-dropdown-button {
-  width: 100%;
-  text-align: left;
+.select-parfums {
   margin-bottom: 15px;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #2D9CDB;
+}
+
+.if-statement {
+  text-align: center;
+  color: #FF0000;
+  font-size: 13px;
+  margin: 0 21px;
 }
