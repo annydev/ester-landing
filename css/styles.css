@@ -516,7 +516,8 @@ h5, h6 {
 }
 
 .accordions .accordion-title.collapsed {
-  background-color: #ECF8FF;;
+  background-color: #ECF8FF;
+  ;
   color: black;
   border: 1px solid #2d9cdb;
   border-radius: 5px;
@@ -544,8 +545,7 @@ h5, h6 {
 }
 
 .footer-icons {
-  font-size: 25px;
-  color: #475993;
+  padding: 14px
 }
 
 /*MODALS*/
