@@ -114,3 +114,16 @@ $(".next-certificate-button").click(function() {
   nextImage.removeClass("d-none");
   nextImage.addClass("active");
 });
+
+$(".map-link").click(function() {
+  var maps = [
+    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2718.846378275485!2d28.8591984!3d47.0432452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cf8873b9ec3%3A0xba3f642a70ef7aee!2sMoldindconbank!5e0!3m2!1sen!2s!4v1567978796003!5m2!1sen!2s",
+    "https://www.google.com/maps/d/u/0/embed?mid=1YnUPp6zfQ3zGapI5WEVGpZ-sIPBPfIYO&ll=47.01732867611592%2C28.841664818493655&z=16",
+    "https://www.google.com/maps/d/u/0/embed?mid=1YnUPp6zfQ3zGapI5WEVGpZ-sIPBPfIYO&ll=47.04927150000004%2C28.863892299999975&z=12"
+  ];
+
+  var number = $(this).attr("number");
+  var link = maps[number];
+
+  $("#mapIframe").attr("src", link);
+});

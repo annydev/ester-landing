@@ -531,6 +531,10 @@ h5, h6 {
   display: block;
 }
 
+.collapsed-elements {
+  padding: 4px;
+}
+
 /*FOOTER PART*/
 #footer {
   background-color: #ECF8FF;
