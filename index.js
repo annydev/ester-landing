@@ -1,3 +1,9 @@
+window.onload = function() {
+  setTimeout(function() {
+    $("#loading").remove();
+  }, 500);
+};
+
 $(".next-button").click(function() {
   var selectedButton = $(this);
   var closestClassCatalogSlider = selectedButton.closest(".catalog-sliders");
@@ -127,3 +133,30 @@ $(".map-link").click(function() {
 
   $("#mapIframe").attr("src", link);
 });
+
+$(".navbar-toggler").click(function() {
+  $("#navigation-bar").toggleClass("open");
+  $(".navbar-collapse").toggleClass("show");
+})
+
+$(".show-description-btn").click(function(){
+  var currentButton = $(this);
+  var currentCatalogText = currentButton.closest(".catalog-text");
+  var currentCatalogDescription = currentCatalogText.find(".catalog-description");
+  var hideButton = currentCatalogText.find(".hide-description-btn");
+
+  currentCatalogDescription.addClass("d-block");
+  currentButton.addClass("d-none");
+  hideButton.removeClass("d-none");
+})
+
+$(".hide-description-btn").click(function(){
+  var currentButton = $(this);
+  var currentCatalogText = currentButton.closest(".catalog-text");
+  var currentCatalogDescription = currentCatalogText.find(".catalog-description");
+  var showButton = currentCatalogText.find(".show-description-btn");
+
+  currentCatalogDescription.removeClass("d-block");
+  currentButton.addClass("d-none");
+  showButton.removeClass("d-none");
+})

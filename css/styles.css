@@ -23,7 +23,6 @@ h5, h6 {
 /* WELCOME PART*/
 #welcome-part {
   background-image: url("../images/welcome-image.png");
-  background-color: #808000;
   background-size: cover;
   position: relative;
   padding-bottom: 70px;
@@ -58,6 +57,16 @@ h5, h6 {
   font-weight: 600;
 }
 
+.custom-toggler {
+  border-radius: 50%;
+  font-size: 13px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-color: white;
+  color: white;
+}
+
 #navigation-bar {
   border-bottom: solid;
   border-color: #d3d3d34a;
@@ -67,6 +76,22 @@ h5, h6 {
 #navigation-bar.scrolled {
   background-color: #333333 !important;
   transition: background-color 200ms linear;
+}
+
+#navigation-bar .custom-toggler .fa-bars {
+  display: block;
+}
+
+#navigation-bar .custom-toggler .fa-times {
+  display: none;
+}
+
+#navigation-bar.open .custom-toggler .fa-bars {
+  display: none;
+}
+
+#navigation-bar.open .custom-toggler .fa-times {
+  display: block;
 }
 
 .logo {
@@ -127,15 +152,6 @@ h5, h6 {
   box-shadow: 0 2px 4px 0 black;
   margin: 12px;
   text-align: center;
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: #FFFFFF;
-  ;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /*WELCOME PART CARDS*/
@@ -253,16 +269,33 @@ h5, h6 {
   padding-top: 12px;
 }
 
+.grid-for-mobile {
+  display: grid;
+  grid-template-columns: 75% 1fr 1fr;
+}
+
+.grid-for-mobile .previous-button-container {
+  margin-left: 12px;
+}
+
+.grid-for-mobile .next-button-container {
+  margin-left: 12px;
+}
+
 .catalog-text-p-2 {
   font-weight: bold;
   border: solid;
-  width: 25%;
+  width: 32%;
   margin-top: 15px;
   background-color: #FFFFFF;
   text-align: center;
   border-color: #2D9CDB;
   border-width: 1px;
   color: #2D9CDB;
+}
+
+.visibility-buttons {
+  display: none;
 }
 
 .catalog-slider-button {
@@ -272,7 +305,8 @@ h5, h6 {
   background: #2D9CDB;
   border-radius: 10px;
   padding: 16px 45px;
-  box-shadow: 0 5px 10px 0 lightgrey;
+  box-shadow: 0 5px 9px 0 #6c757d;
+  border: none;
 }
 
 .vector-button {
@@ -486,8 +520,20 @@ h5, h6 {
   padding: 15px;
 }
 
+.accordion-item .card {
+  border: none;
+}
+
 .accordion-item {
   margin-bottom: 15px;
+}
+
+.accordion-item .collapsing,
+.accordion-item .collapse {
+  background-color: #ECF8FF;
+  border: 1px solid #2d9cdb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .accordion-title {
@@ -517,7 +563,6 @@ h5, h6 {
 
 .accordions .accordion-title.collapsed {
   background-color: #ECF8FF;
-  ;
   color: black;
   border: 1px solid #2d9cdb;
   border-radius: 5px;
@@ -559,6 +604,7 @@ h5, h6 {
 .footer-email {
   color: black;
 }
+
 /*MODALS*/
 #modals {
   font-family: "Monsterrat", sans-serif;
@@ -653,4 +699,267 @@ h5, h6 {
   right: -25px;
   top: 50%;
   background-color: white;
+}
+
+/*MOBILE VERSION*/
+@media only screen and (max-device-width: 768px) {
+
+  /*NAVIGATION MENU*/
+  #navigation-bar.open {
+    background-color: #333333 !important;
+  }
+
+  .left-part-navigation {
+    display: grid;
+    position: fixed;
+    top: 88px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #333333;
+  }
+
+  .left-part-navigation .navigation-elements {
+    font-size: 23px;
+    margin: auto;
+    text-align: center;
+    line-height: 61px;
+  }
+
+  .left-part-navigation .li-mobile {
+    position: fixed;
+    bottom: 33px;
+    line-height: 23px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+
+  /*WELCOME PART*/
+  .welcome-text {
+    text-align: center;
+    padding: 240px 0 150px;
+  }
+
+  .big-heading {
+    padding: 0;
+  }
+
+  .big-heading h1 {
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .welcome-button-right button {
+    width: 69px;
+    height: 69px;
+    border-color: white;
+  }
+
+  /*WELCOME CARDS*/
+  .cards-centering {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .cards {
+    padding: 25px;
+  }
+
+  .cards-title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  /*PARFUM ADVANTAGES*/
+  .parfum-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    padding: 0 12px;
+  }
+
+  .text-description-mobile {
+    order: 2;
+  }
+
+  .image-description-mobile {
+    order: 1;
+  }
+
+  .text-description p {
+    font-size: 14px;
+  }
+
+  .text-description h4 {
+    font-size: 20px;
+  }
+
+  .advantages-title {
+    padding: 0;
+  }
+
+  .advantages-title h1 {
+    font-size: 30px;
+    padding: 36px 37px 35px;
+  }
+
+  .certificate-click-line {
+    text-decoration: dashed underline;
+    border-bottom: none;
+  }
+
+  .image-rounded {
+    width: 100%;
+  }
+
+  /*PARFUM CATALOG HEAD*/
+  .gender-choosing-buttons {
+    margin: 20px 40px;
+  }
+
+  /*CATALOG SLIDER*/
+  .grid-for-mobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .previous-button-container {
+    order: 1;
+  }
+
+  .next-button-container {
+    order: 3;
+    text-align: right;
+  }
+
+  .catalog-sliders {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-slider-button {
+    padding: 25px;
+    font-size: 18px;
+    margin: 16px 25px;
+    order: 4;
+    grid-column: span 3 / auto;
+  }
+
+  .cards-carousel-padding {
+    padding: 0 6px 20px;
+  }
+
+  .catalog-text {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-text h3 {
+    padding-top: 37px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .catalog-description {
+    order: 5;
+    display: none;
+  }
+
+  .visibility-buttons {
+    display: block;
+    text-align: center;
+  }
+
+  .show-description-btn,
+  .hide-description-btn {
+    background: none;
+    border: none;
+    border-bottom: 1px dashed #2d9cdb;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  .vector-button {
+    width: 43px;
+    height: 41px;
+    background-color: #FFFFFF;
+  }
+
+  .catalog-text-p-2 {
+    order: 2;
+  }
+
+  .catalog-text-p-2 {
+    width: 100%;
+  }
+
+  /*CLIENTS FEEDBACK*/
+  .feedback-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .feedback-heading {
+    padding: 75px 0 40px;
+  }
+
+  .feedback-heading h1 {
+    font-size: 30px;
+  }
+
+  /*BUY PARFUM FOR SALE*/
+  .being-sales-heading h1 {
+    font-size: 30px;
+  }
+
+  .two-parts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .right-part {
+    background-image: none;
+  }
+
+  .right-part,
+  .left-part {
+    text-align: center;
+    padding: 12px;
+  }
+
+  .right-part h3,
+  .left-part h3 {
+    font-size: 20px;
+  }
+
+  /*HOW IT WORKS*/
+  .how-it-works-heading {
+    padding: 60px 44px 0;
+  }
+
+  .how-it-works-heading h1 {
+    font-size: 30px;
+  }
+
+  .how-it-works-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  /*MAO*/
+  .map-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .map-part {
+    padding: 0;
+  }
 }
