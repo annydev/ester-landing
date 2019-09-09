@@ -703,6 +703,9 @@ h5, h6 {
 
 /*MOBILE VERSION*/
 @media only screen and (max-device-width: 768px) {
+  body.navbar-open {
+    height: 0;
+  }
 
   /*NAVIGATION MENU*/
   #navigation-bar.open {
