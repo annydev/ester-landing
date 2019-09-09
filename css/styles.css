@@ -712,7 +712,7 @@ h5, h6 {
   .left-part-navigation {
     display: grid;
     position: fixed;
-    top: 88px;
+    top: 60px;
     right: 0px;
     left: 0px;
     bottom: 0px;
