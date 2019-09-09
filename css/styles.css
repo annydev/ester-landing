@@ -704,6 +704,8 @@ h5, h6 {
 /*MOBILE VERSION*/
 @media only screen and (max-device-width: 768px) {
   body.navbar-open {
+    position: fixed;
+    width: 0 !important;
     height: 0 !important;
     overflow: hidden !important;
   }
