@@ -552,6 +552,13 @@ h5, h6 {
   padding: 14px
 }
 
+.footer-part h3 {
+  color: black;
+}
+
+.footer-email {
+  color: black;
+}
 /*MODALS*/
 #modals {
   font-family: "Monsterrat", sans-serif;
