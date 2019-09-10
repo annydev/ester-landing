@@ -4,27 +4,24 @@ window.onload = function() {
   }, 500);
 };
 
-$(".next-button").click(function() {
-  var selectedButton = $(this);
-  var closestParfumeContainer = selectedButton.closest(".parfume-container");
-  var closestClassCatalogSlider = selectedButton.closest(".catalog-sliders");
+function onNextAction(currentElement) {
+  var closestParfumeContainer = $(currentElement).closest(".parfume-container");
+  var closestClassCatalogSlider = $(currentElement).closest(".catalog-sliders");
 
   closestClassCatalogSlider.addClass("d-none");
 
   var nextCatalogSliderElement = closestClassCatalogSlider.next();
-
 
   if (nextCatalogSliderElement.length === 0) {
     nextCatalogSliderElement = closestParfumeContainer.find(".catalog-sliders").first();
   }
 
   nextCatalogSliderElement.removeClass("d-none");
-});
+}
 
-$(".previous-button").click(function() {
-  var chosenButton = $(this);
-  var closestParfumeContainer = chosenButton.closest(".parfume-container");
-  var closestClassCatalogSlider = chosenButton.closest(".catalog-sliders");
+function onPreviousAction(currentElement) {
+  var closestParfumeContainer = $(currentElement).closest(".parfume-container");
+  var closestClassCatalogSlider = $(currentElement).closest(".catalog-sliders");
 
   closestClassCatalogSlider.addClass("d-none");
 
@@ -35,6 +32,26 @@ $(".previous-button").click(function() {
   }
 
   previousCatalogSliderElement.removeClass("d-none");
+}
+
+$(".next-button").click(function() {
+  var currentButton = $(this);
+  onNextAction(currentButton);
+});
+
+$(".catalog-image").on("swipeleft", function(e, data) {
+  var currentImage = $(this);
+  onNextAction(currentImage);
+});
+
+$(".previous-button").click(function() {
+  var currentButton = $(this);
+  onPreviousAction(currentButton);
+});
+
+$(".catalog-image").on("swiperight", function(e, data) {
+  var currentImage = $(this);
+  onPreviousAction(currentImage);
 });
 
 $(".man").click(function() {
@@ -142,7 +159,7 @@ $(".navbar-toggler").click(function() {
   $("body").toggleClass("navbar-open");
 });
 
-$(".show-description-btn").click(function(){
+$(".show-description-btn").click(function() {
   var currentButton = $(this);
   var currentCatalogText = currentButton.closest(".catalog-text");
   var currentCatalogDescription = currentCatalogText.find(".catalog-description");
@@ -153,7 +170,7 @@ $(".show-description-btn").click(function(){
   hideButton.removeClass("d-none");
 });
 
-$(".hide-description-btn").click(function(){
+$(".hide-description-btn").click(function() {
   var currentButton = $(this);
   var currentCatalogText = currentButton.closest(".catalog-text");
   var currentCatalogDescription = currentCatalogText.find(".catalog-description");
