@@ -6,6 +6,7 @@ window.onload = function() {
 
 $(".next-button").click(function() {
   var selectedButton = $(this);
+  var closestParfumeContainer = selectedButton.closest(".parfume-container");
   var closestClassCatalogSlider = selectedButton.closest(".catalog-sliders");
 
   closestClassCatalogSlider.addClass("d-none");
@@ -14,7 +15,7 @@ $(".next-button").click(function() {
 
 
   if (nextCatalogSliderElement.length === 0) {
-    nextCatalogSliderElement = $(".catalog-sliders").first();
+    nextCatalogSliderElement = closestParfumeContainer.find(".catalog-sliders").first();
   }
 
   nextCatalogSliderElement.removeClass("d-none");
@@ -22,6 +23,7 @@ $(".next-button").click(function() {
 
 $(".previous-button").click(function() {
   var chosenButton = $(this);
+  var closestParfumeContainer = chosenButton.closest(".parfume-container");
   var closestClassCatalogSlider = chosenButton.closest(".catalog-sliders");
 
   closestClassCatalogSlider.addClass("d-none");
@@ -29,7 +31,7 @@ $(".previous-button").click(function() {
   var previousCatalogSliderElement = closestClassCatalogSlider.prev();
 
   if (previousCatalogSliderElement.length === 0) {
-    previousCatalogSliderElement = $(".catalog-sliders").last();
+    previousCatalogSliderElement = closestParfumeContainer.find(".catalog-sliders").last();
   }
 
   previousCatalogSliderElement.removeClass("d-none");
@@ -137,7 +139,8 @@ $(".map-link").click(function() {
 $(".navbar-toggler").click(function() {
   $("#navigation-bar").toggleClass("open");
   $(".navbar-collapse").toggleClass("show");
-})
+  $("body").toggleClass("navbar-open");
+});
 
 $(".show-description-btn").click(function(){
   var currentButton = $(this);
@@ -148,7 +151,7 @@ $(".show-description-btn").click(function(){
   currentCatalogDescription.addClass("d-block");
   currentButton.addClass("d-none");
   hideButton.removeClass("d-none");
-})
+});
 
 $(".hide-description-btn").click(function(){
   var currentButton = $(this);
@@ -159,4 +162,4 @@ $(".hide-description-btn").click(function(){
   currentCatalogDescription.removeClass("d-block");
   currentButton.addClass("d-none");
   showButton.removeClass("d-none");
-})
+});
