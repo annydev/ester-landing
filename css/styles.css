@@ -529,9 +529,21 @@ h5, h6 {
 }
 
 .map-border {
+  margin-bottom: 6px;
+}
+
+.map-border a {
   border: none;
   border-bottom: dashed;
   border-color: black;
+  border-width: 1px;
+}
+
+.map-border a:hover {
+  text-decoration: none;
+  border: none;
+  border-bottom: dashed;
+  border-color:#2d9cdb;
   border-width: 1px;
 }
 
