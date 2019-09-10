@@ -143,15 +143,25 @@ h5, h6 {
 
 .welcome-button-right button {
   border: none;
-  font-size: 11px;
+  font-size: 13px;
   border-radius: 70px;
-  width: 80px;
-  height: 80px;
+  width: 92px;
+  height: 92px;
   color: #FFFFFF;
   background: #2D9CDB;
   box-shadow: 0 2px 4px 0 black;
   margin: 12px;
   text-align: center;
+}
+
+.action-button:hover {
+  color: #2D9CDB;
+  background: #FFFFFF;
+}
+
+.active-button-white:hover {
+  color: #FFFFFF;
+  background: #2D9CDB;
 }
 
 /*WELCOME PART CARDS*/
@@ -543,7 +553,7 @@ h5, h6 {
   text-decoration: none;
   border: none;
   border-bottom: dashed;
-  border-color:#2d9cdb;
+  border-color: #2d9cdb;
   border-width: 1px;
 }
 
