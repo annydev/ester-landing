@@ -520,6 +520,21 @@ h5, h6 {
   padding: 15px;
 }
 
+.map-link {
+  color: black;
+}
+
+.fa-map-marker-alt {
+  margin-right: 6px;
+}
+
+.map-border {
+  border: none;
+  border-bottom: dashed;
+  border-color: black;
+  border-width: 1px;
+}
+
 .accordion-item .card {
   border: none;
 }
@@ -608,10 +623,6 @@ h5, h6 {
 /*MODALS*/
 #modals {
   font-family: "Monsterrat", sans-serif;
-}
-
-.modal-part {
-  width: 70%;
 }
 
 .modal-heading {
@@ -811,11 +822,6 @@ h5, h6 {
     padding: 36px 37px 35px;
   }
 
-  .certificate-click-line {
-    text-decoration: dashed underline;
-    border-bottom: none;
-  }
-
   .image-rounded {
     width: 100%;
   }
@@ -935,7 +941,7 @@ h5, h6 {
   .right-part,
   .left-part {
     text-align: center;
-    padding: 12px;
+    padding: 25px;
   }
 
   .right-part h3,

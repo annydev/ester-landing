@@ -15,7 +15,6 @@ function onNextAction(currentElement) {
   if (nextCatalogSliderElement.length === 0) {
     nextCatalogSliderElement = closestParfumeContainer.find(".catalog-sliders").first();
   }
-
   nextCatalogSliderElement.removeClass("d-none");
 }
 
