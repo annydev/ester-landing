@@ -164,6 +164,8 @@ h5, h6 {
 .action-button:hover {
   color: #2D9CDB;
   background: #FFFFFF;
+  border: 1px solid #2D9CDB;
+  border-radius: 5px;
 }
 
 .active-button-white:hover {
@@ -300,9 +302,13 @@ h5, h6 {
 }
 
 .catalog-text-p-2 {
+  height: 32px;
+  font-size: 18px;
+  padding: 3px;
+  border-radius: 5px;
   font-weight: bold;
   border: solid;
-  width: 32%;
+  width: 105px;
   margin-top: 15px;
   background-color: #FFFFFF;
   text-align: center;
@@ -317,23 +323,28 @@ h5, h6 {
 
 .catalog-slider-button {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 18px;
   color: white;
   background: #2D9CDB;
-  border-radius: 10px;
-  padding: 16px 45px;
-  box-shadow: 0 5px 9px 0 #6c757d;
+  border-radius: 5px;
   border: none;
+  height: 70px;
 }
 
 .vector-button {
+  padding: 25px;
   background-color: transparent;
-  width: 49px;
-  height: 51px;
+  width: 70px;
+  height: 70px;
   border-radius: 5px;
   border: solid;
   border-width: 1px;
   border-color: rgba(34, 34, 34, 0.3);
+}
+
+.vector-button-icon {
+  height: 17px;
+  width: 8.5px;
 }
 
 /*CLIENTS FEEDBACK*/
