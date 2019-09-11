@@ -98,10 +98,11 @@ h5, h6 {
 }
 
 .logo {
-  width: 92px;
+  width: 138px;
 }
 
 .ru-ro {
+  font-size: 16px;
   color: #FFFFFF;
 }
 
@@ -113,6 +114,9 @@ h5, h6 {
 }
 
 .navigation-elements {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
   color: #FFFFFF;
 }
 
@@ -122,13 +126,14 @@ h5, h6 {
 
 .contact-phone {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .contact {
   color: #FFFFFF;
-  font-size: 12px;
-  text-align: center;
+  font-size: 14px;
+  text-align: right;
+  font-weight: normal;
 }
 
 .welcome-text {
@@ -137,38 +142,70 @@ h5, h6 {
 }
 
 .welcome-button {
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 18px;
+  width: 260px;
+  height: 70px;
   color: #FFFFFF;
   background: #2D9CDB;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 16px 80px;
   margin-top: 12px;
-  box-shadow: 0 2px 4px 0 black;
   border: none;
 }
 
+.welcome-button:hover {
+  color: #2D9CDB;
+  background: #FFFFFF;
+  border: 1px solid #2D9CDB;
+  width: 260px;
+  height: 70px;
+  border-radius: 5px;
+}
+
 .big-heading {
-  padding: 54px;
+  padding: 173px 79px 134px;
+}
+
+.big-heading h1 {
+  font-size: 48px;
+}
+
+.big-h1 {
+  width: 494px;
+  height: 112px;
+}
+
+.big-heading p {
+  padding-top: 20px;
+  width: 445px;
+  height: 68px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .welcome-button-right button {
   border: none;
   font-size: 13px;
   border-radius: 70px;
-  width: 92px;
-  height: 92px;
+  font-weight: 600;
+  width: 89px;
+  height: 89px;
   color: #FFFFFF;
   background: #2D9CDB;
-  box-shadow: 0 2px 4px 0 black;
   margin: 12px;
   text-align: center;
 }
 
-.action-button:hover {
+.welcome-button-right-active:hover {
+  border-radius: 70px;
+  width: 89px;
+  height: 89px;
   color: #2D9CDB;
   background: #FFFFFF;
-  border: 1px solid #2D9CDB;
-  border-radius: 5px;
 }
 
 .active-button-white:hover {
@@ -189,19 +226,44 @@ h5, h6 {
   padding: 15px;
 }
 
-.cards-carousel-padding {
-  padding: 20px 125px;
+.cards-title {
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 64px;
+  width: 679px;
+  height: 34px;
+  padding-bottom: 112px;
 }
 
-.cards-title {
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 45px;
-  margin-top: 60px;
+.card-title h5 {
+  width: 114px;
+  height: 29px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .cards-centering {
   margin: 0 auto;
+}
+
+.cards-content {
+  padding: 10px 20px 10px 0;
+  font-family: "Raleway", sans-serif;
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.cards-content p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffffcc;
 }
 
 /*ADVANTAGES PART*/
@@ -210,8 +272,21 @@ h5, h6 {
 }
 
 .advantages-title {
+  padding: 70px;
+}
+
+.advantages-title h1 {
+  color: #222222;
   text-align: center;
-  padding: 50px 60px;
+  width: 815px;
+  height: 102px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.parfums-advantages-padding {
+  padding: 20px 110px;
 }
 
 .parfum-description {
@@ -225,17 +300,28 @@ h5, h6 {
   border-radius: 5px;
 }
 
-.text-description {
-  padding: 20px;
+.text-description h4 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.text-description-right {
+  padding: 20px 0 0 61px;
   margin: auto;
 }
 
-.text-description p {
-  font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+.text-description-left {
+  padding: 20px 60px 0 0;
+  margin: auto;
+}
+
+.text-description-right, p .text-description-left, p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 500;
-  word-spacing: 8px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .certificate-click-line {
@@ -252,25 +338,32 @@ h5, h6 {
   background-color: #ECF8FF;
 }
 
-.catalog-title {
-  text-align: center;
+.catalog-title h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  width: 460px;
+  height: 64px;
+  margin: auto;
+  color: #222222;
 }
 
 .gender-choosing-buttons {
+  font-weight: 500;
+  font-size: 24px;
   background-color: transparent;
   border: none;
   border-bottom: dashed;
   border-width: 1px;
   margin: 20px 50px;
-  font-size: 20px;
-  color: #2D9CDB;
+  color: #222222;
 }
 
 .gender-choosing-buttons.active {
   border: none;
   border-bottom: dashed;
   border-width: 1px;
-  color: black;
+  color: #2D9CDB;
 }
 
 /*SLIDERS CAROUSEL*/
@@ -287,8 +380,41 @@ h5, h6 {
   padding-left: 25px;
 }
 
+.catalog-text h3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #222222;
+}
+
 .catalog-text-p-1 {
   padding-top: 12px;
+}
+
+.catalog-description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  width: 530px;
+  height: 243px;
+}
+
+.action-button:hover {
+  color: #2D9CDB;
+  background: #FFFFFF;
+  border: 1px solid #2D9CDB;
+  border-radius: 5px;
+  height: 70px;
+}
+
+.catalog-image {
+  width: 500px;
+  height: 483px;
+}
+
+.cards-carousel-padding {
+  padding: 20px 69px;
 }
 
 .grid-for-mobile {
@@ -307,7 +433,6 @@ h5, h6 {
 .catalog-text-p-2 {
   height: 32px;
   font-size: 18px;
-  padding: 3px;
   border-radius: 5px;
   font-weight: bold;
   border: solid;
@@ -352,7 +477,7 @@ h5, h6 {
 
 /*CLIENTS FEEDBACK*/
 #client-feedback {
-  background-color: #333333;
+  background-color: #222222;
 }
 
 .client-card {
@@ -362,11 +487,23 @@ h5, h6 {
   border: none;
 }
 
+.client-card h5 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.client-card p {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 .feedback-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
-  padding: 12px 58px;
+  padding: 100px 58px;
 }
 
 .client-body-text {
@@ -377,9 +514,16 @@ h5, h6 {
 }
 
 .feedback-heading {
+  padding: 65px 45px;
+  width: 569px;
+  height: 98px;
   text-align: center;
   color: #FFFFFF;
-  padding: 75px 50px 40px;
+}
+
+.feedback-heading h1 {
+  font-weight: 600;
+  font-size: 48px;
 }
 
 .fab {
@@ -389,13 +533,20 @@ h5, h6 {
 /*BEING SALES SECTION*/
 #being-sales {
   padding-bottom: 295px;
-  background-color: #333333;
+  background-color: #222222;
 }
 
 .being-sales-heading {
+  width: 385px;
+  height: 49px;
   text-align: center;
-  padding: 85px 0 40px;
+  padding: 23px 0 96px;
   color: #FFFFFF;
+}
+
+.being-sales-heading h1 {
+  font-weight: 600;
+  font-size: 48px;
 }
 
 .sale-card {
@@ -409,6 +560,11 @@ h5, h6 {
 .cards-content {
   padding: 0;
   margin-top: 12px;
+}
+
+.cards-content h6 {
+  font-weight: 600;
+  font-size: 22px;
 }
 
 /* TWO PARTS*/
@@ -436,15 +592,42 @@ h5, h6 {
   color: black;
 }
 
+.right-part h3 {
+  color: #222222;
+  width: 505px;
+  height: 113px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.right-part p {
+  color: #222222;
+  width: 436px;
+  height: 51px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
 .right-part button {
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 273px;
+  height: 70px;
   color: #FFFFFF;
   background: #2D9CDB;
-  border-radius: 10px;
-  padding: 16px 63px;
+  border-radius: 5px;
   margin-top: 12px;
-  box-shadow: 0 2px 4px 0 #6c757d;
   border: none;
+}
+
+.right-part button:hover {
+  width: 273px;
+  height: 70px;
+  color: #2D9CDB;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #2D9CDB;
 }
 
 .left-part {
@@ -455,14 +638,29 @@ h5, h6 {
   background-color: #2D9CDB;
 }
 
+.left-part h3 {
+  font-weight: 500;
+  font-size: 30px;
+  width: 291px;
+  height: 113px;
+}
+
+.left-part p {
+  width: 396px;
+  height: 51px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
 .left-part button {
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 273px;
+  height: 70px;
   color: #2D9CDB;
   background: #FFFFFF;
-  border-radius: 10px;
-  padding: 16px 44px;
+  border-radius: 5px;
   margin-top: 12px;
-  box-shadow: 0 2px 4px 0 #6c757d;
   border: none;
 }
 
@@ -473,8 +671,16 @@ h5, h6 {
 }
 
 .how-it-works-heading {
+  width: 473px;
+  height: 64px;
   text-align: center;
-  padding: 60px 0 0;
+  padding: 60px 0 65px;
+}
+
+.how-it-works-heading h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #222222;
 }
 
 .how-it-works-cards {
@@ -497,26 +703,44 @@ h5, h6 {
   border-width: 1px;
 }
 
-.work-info-cards-p {
-  color: #222222b3;
-  font-size: 14px;
+.work-info-cards p {
+  padding-bottom: 30px;
 }
 
-.circle-numbers {
-  text-align: center;
-  border-radius: 31px;
-  width: 60px;
-  height: 60px;
-  font-size: 38px;
+.circle {
+  width: 74px;
+  height: 74px;
   margin: auto;
   position: relative;
   margin-top: -99px;
   background-color: #2D9CDB;
   color: white;
+  border-radius: 35px;
+}
+
+.circle-numbers {
+  width: 14px;
+  height: 48px;
+  font-size: 38px;
 }
 
 .cards-work-content {
   padding-top: 55px;
+}
+
+.cards-work-content h5 {
+  width: 265px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #222222;
+}
+
+.cards-work-content p {
+  width: 279px;
+  height: 96px;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(34, 34, 34, 0.7);
 }
 
 /*MAP HEADING*/
@@ -525,8 +749,15 @@ h5, h6 {
 }
 
 .map-title {
-  padding: 57px 0 30px;
-  text-align: center;
+  width: 644px;
+  height: 64px;
+  padding: 87px 0 105px;
+  margin: auto;
+}
+
+.map-title h1 {
+  font-weight: 600;
+  font-size: 48px;
 }
 
 /*MAPS PART*/
@@ -651,16 +882,27 @@ h5, h6 {
   padding: 62px 0 20px;
 }
 
+.footer-part h3 {
+  width: 301px;
+  height: 23px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 36px;
+}
+
 .footer-icons {
   padding: 14px
 }
 
-.footer-part h3 {
-  color: black;
-}
-
 .footer-email {
-  color: black;
+  width: 284px;
+  height: 19px;
+  margin: auto;
+  font-weight: normal;
+  font-size: 24px;
+  color: #222222;
+  padding: 20px;
+  margin-bottom: 33px;
 }
 
 /*MODALS*/

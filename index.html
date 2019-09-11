@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Raleway:400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v004">
   <title>Ester</title>
 </head>
@@ -44,7 +44,7 @@
             <li class="nav-item">
               <a class="nav-link navigation-elements left-part-links display-blue" href="#footer">Контакты</a>
             </li>
-            <li class="nav-item navigation-elements li-mobile display-blue">
+            <li class="nav-item li-mobile display-blue">
               <a href="tel:+37322896767">
                 <div class="contact-phone">
                   +373 22 89 67 67
@@ -63,16 +63,18 @@
     <div class="container">
       <div class="row welcome-text">
         <div class="big-heading col-lg-7">
-          <h1>Автопарфюм,</h1>
-          <h1> а не ароматизатор!</h1>
+          <div class="big-h1">
+            <h1>Автопарфюм,</h1>
+            <h1> а не ароматизатор!</h1>
+          </div>
           <p>Твой любимый парфюм теперь у тебя в автомобиле.</p>
-          <button class="welcome-button action-button" data-toggle="modal" data-target="#orderParfumeModal">
+          <button class="welcome-button" data-toggle="modal" data-target="#orderParfumeModal">
             <span>Заказать</span>
           </button>
         </div>
       </div>
       <div class="welcome-button-right">
-        <button class="action-button" data-toggle="modal" data-target="#beingSalesModal">Стать дилером</button>
+        <button class="welcome-button-right-active" data-toggle="modal" data-target="#beingSalesModal">Стать дилером</button>
       </div>
     </div>
   </section>
@@ -82,14 +84,14 @@
       <div class="card-deck cards-centering">
         <div class="card cards">
           <img src="images/welcome-cards/01.png" class="card-img-top" alt="tulip">
-          <div class="card-body">
+          <div class="card-body cards-content">
             <h5 class="card-title">Свежесть</h5>
             <p class="card-text">Благодаря свежести, даже длительная дорога в закрытом пространстве станет легкой.</p>
           </div>
         </div>
         <div class="card cards">
           <img src="images/welcome-cards/02.png" class="card-img-top" alt="tulip">
-          <div class="card-body">
+          <div class="card-body cards-content">
             <h5 class="card-title">Снятие стресса</h5>
             <p class="card-text">Правильно подобранный парфюм поможет начать утро приятно, а вечер - расслабленно.</p>
           </div>
@@ -99,14 +101,14 @@
         </div>
         <div class="card cards">
           <img src="images/welcome-cards/03.png" class="card-img-top" alt="tulip">
-          <div class="card-body">
+          <div class="card-body cards-content">
             <h5 class="card-title">Устранение запахов</h5>
             <p class="card-text">Поддерживает гигиену салона и создаёт приятный аромат внутри него.</p>
           </div>
         </div>
         <div class="card cards">
           <img src="images/welcome-cards/04.png" class="card-img-top" alt="tulip">
-          <div class="card-body">
+          <div class="card-body cards-content">
             <h5 class="card-title">Быть в тренде</h5>
             <p class="card-text">Топовые ароматы 2019 года по версии Jeremy Fragrance.</p>
           </div>
@@ -115,7 +117,7 @@
     </div>
   </section>
   <section id="parfums-advantages">
-    <div class="container cards-carousel-padding">
+    <div class="container parfums-advantages-padding">
       <div class="advantages-title">
         <h1>Преимущества автопарфюма Ester</h1>
       </div>
@@ -123,13 +125,13 @@
         <div class="">
           <img class="img-fluid image-rounded" src="images/advantages/01.png" alt="made-in-Moldova image">
         </div>
-        <div class="text-description">
+        <div class="text-description-right">
           <h4>Произведено в Молдове</h4>
           <p>На базе качественного немецкого сырья. Поэтому нам удаётся поддерживать доступные цены, но не проигрывать в качестве.</p>
         </div>
       </div>
       <div class="parfum-description parfum-description-mobile">
-        <div class="text-description text-description-mobile">
+        <div class="text-description-left text-description-mobile">
           <a href="#" data-toggle="modal" data-target="#certificateModal">
             <h4 class="certificate-click-line">Сертификат – гарантия</h4>
           </a>
@@ -143,13 +145,13 @@
         <div class="">
           <img class="img-fluid image-rounded" src="images/advantages/03.png" alt="useful">
         </div>
-        <div class="text-description">
+        <div class="text-description-right">
           <h4>До 6 недель использования</h4>
           <p>Одного флакона в среднем хватает до 6 недель использования. Скорость израсходования парфюма зависит от погодных условий (температура и влажность).</p>
         </div>
       </div>
       <div class="parfum-description parfum-description-mobile">
-        <div class="text-description text-description-mobile">
+        <div class="text-description-left text-description-mobile">
           <h4>Легко крепится</h4>
           <p>Флакончик с парфюмом легко крепится и не требует дополнительного оборудования. Вы можете подвесить флакончик на зеркало заднего вида или вставить его в воздуховод.</p>
         </div>
@@ -843,8 +845,7 @@
   </section>
   <section id="client-feedback">
     <div class="container feedback-heading">
-      <h1>Отзывы</h1>
-      <h1>наших клиентов</h1>
+      <h1>Отзывы наших клиентов</h1>
     </div>
     <div class="card-deck container feedback-grid">
       <a href="https://www.facebook.com/profile.php?id=100008438315687&_rdc=1&_rdr" target="_blank">
@@ -943,7 +944,7 @@
         <div class="right-part">
           <h3>Зарабатывайте, освободив всего одну полочку в своем торговом помещении.</h3>
           <p>Оказываем поддержку и проводим консультации перед стартом продаж.</p>
-          <button class="action-button" data-toggle="modal" data-target="#beingSalesModal">Стать дилером</button>
+          <button data-toggle="modal" data-target="#beingSalesModal">Стать дилером</button>
         </div>
       </div>
       <div class="">
@@ -961,21 +962,27 @@
     </div>
     <div class="card-deck container how-it-works-cards">
       <div class="card work-info-cards">
-        <p class="circle-numbers">1</p>
+        <div class="circle">
+          <p class="circle-numbers">1</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Подписание договора</h5>
           <p class="card-text work-info-cards-p">Наш менеджер выезжает в удобное для вас место. Вы обсуждаете условия и заключаете договор.</p>
         </div>
       </div>
       <div class="card work-info-cards">
-        <p class="circle-numbers">2</p>
+        <div class="circle">
+          <p class="circle-numbers">2</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Оплата</h5>
           <p class="card-text work-info-cards-p">Оплата проводится посредством перевода на фирму в соответствии с условиями договора.</p>
         </div>
       </div>
       <div class="card work-info-cards">
-        <p class="circle-numbers">3</p>
+        <div class="circle">
+          <p class="circle-numbers">3</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Доставка товара</h5>
           <p class="card-text work-info-cards-p">Передаём товар службе доставки в течение 24 часов после подписания договора.</p>
@@ -983,22 +990,27 @@
         </div>
       </div>
       <div class="card work-info-cards">
-        <p class="circle-numbers">4</p>
+        <div class="circle">
+          <p class="circle-numbers">4</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Подготовка сотрудников</h5>
           <p class="card-text work-info-cards-p">Вас будет сопровождать личный ассистент на начальном этапе.</p>
-
         </div>
       </div>
       <div class="card work-info-cards">
-        <p class="circle-numbers">5</p>
+        <div class="circle">
+          <p class="circle-numbers">5</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Поддержка</h5>
           <p class="card-text work-info-cards-p">Предоставляем необходимую помощь, а также консультации по увеличению рынка сбыта.</p>
         </div>
       </div>
       <div class="card work-info-cards">
-        <p class="circle-numbers">6</p>
+        <div class="circle">
+          <p class="circle-numbers">6</p>
+        </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Корпоративные мероприятия</h5>
           <p class="card-text work-info-cards-p">Организуем обучающие тренинги на протяжении всего периода сотрудничества.</p>
