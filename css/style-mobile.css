@@ -330,3 +330,7 @@
     padding: 25px 15px;
   }
 }
+
+.modal-heading h4 {
+  padding: 0;
+}
