@@ -22,7 +22,7 @@ if (window.location.hash) {
   scrollToAnchor(window.location.hash);
 }
 
-function toggleNavbar(){
+function toggleNavbar() {
   $("#navigation-bar").toggleClass("open");
   $(".navbar-collapse").toggleClass("show");
   $("body").toggleClass("navbar-open");
@@ -57,9 +57,13 @@ function onPreviousAction(currentElement) {
   previousCatalogSliderElement.removeClass("d-none");
 }
 
+$("#beingSalesButton").click(function() {
+    $("#beingSalesModal").modal("show");
+});
+
 $('select').selectric();
 
-$(".nav-link").click(function(){
+$(".nav-link").click(function() {
   $("#navigation-bar").removeClass("open");
   $(".navbar-collapse").removeClass("show");
   $("body").removeClass("navbar-open");

@@ -232,6 +232,19 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 40px 0;
 }
 
+.img-circle {
+  cursor: pointer;
+}
+
+.img-circleblock {
+  transform-origin: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 16px 0;
+  text-align: center;
+}
+
 .cards {
   background-color: transparent;
   color: #FFFFFF;
@@ -927,7 +940,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal .form-group {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-heading {
