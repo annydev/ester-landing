@@ -90,19 +90,19 @@ h5, h6 {
   transition: background-color 200ms linear;
 }
 
-#navigation-bar .custom-toggler .fa-bars {
+#navigation-bar .custom-toggler .burger-icon {
   display: block;
 }
 
-#navigation-bar .custom-toggler .fa-times {
+#navigation-bar .custom-toggler .close-icon {
   display: none;
 }
 
-#navigation-bar.open .custom-toggler .fa-bars {
+#navigation-bar.open .custom-toggler .burger-icon {
   display: none;
 }
 
-#navigation-bar.open .custom-toggler .fa-times {
+#navigation-bar.open .custom-toggler .close-icon {
   display: block;
 }
 
