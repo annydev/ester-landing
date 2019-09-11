@@ -29,6 +29,20 @@ h5, h6 {
   color: #FFFFFF;
 }
 
+.form-control {
+  height: 60px;
+  padding: 20px;
+  border-color: #eaedf0;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* WELCOME PART*/
 #welcome-part {
   background-image: url("../images/welcome-image.png");
@@ -912,6 +926,10 @@ h5, h6 {
   border: none;
 }
 
+.modal .form-group {
+    margin-bottom: 10px;
+}
+
 .modal-heading {
   margin-bottom: 15px;
   text-align: center;
@@ -998,3 +1016,5 @@ h5, h6 {
   top: 50%;
   background-color: white;
 }
+
+/* SELECT INPUT */

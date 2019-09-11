@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/selectric.css">
   <link rel="stylesheet" href="css/styles.css?v008">
   <link rel="stylesheet" href="css/style-mobile.css?v008">
   <title>Ester</title>
@@ -1287,29 +1288,31 @@
               </div>
             </div>
             <form>
-              <select class="form-control select-parfums">
-                <option value="" disabled selected>Аромат</option>
-                <option value="m1">Paco Rabanne – One Million</option>
-                <option value="m2">Bulgari – Aqua Amara</option>
-                <option value="m3">Giorgio Armani – Acqua di Gio</option>
-                <option value="m4">Christian Dior – Sauvage</option>
-                <option value="m5">Versace – Eros</option>
-                <option value="m6">Tom Ford – Neroli Portofino</option>
-                <option value="m7">Chanel – Allure Homme Sport</option>
-                <option value="m8">YSL – La Nuit de l’Homme</option>
-                <option value="m9">Paco Rabanne – Invictus</option>
-                <option value="m10">Carolina Herrera – 212MEN</option>
-                <option value="w1">Coco Chanel – Mademoiselle</option>
-                <option value="w2">Paco Rabanne - Lady Million</option>
-                <option value="w3">Armani – Because It’s You: Because It’s You</option>
-                <option value="w4">YSL – Black Opium</option>
-                <option value="w5">Hugo Boss – The Scent</option>
-                <option value="w6">Armani - Si Passione</option>
-                <option value="w7">Tom Ford – Tobacco Vanilla</option>
-                <option value="w8">Dolce Gabbana – Light Blue</option>
-                <option value="w9">Christian Dior – Ambre Nuit</option>
-                <option value="w10">Kilian - Good girl gone bad</option>
-              </select>
+              <div class="form-group">
+                <select class="form-control select-parfums">
+                  <option value="" disabled selected>Аромат</option>
+                  <option value="m1">Paco Rabanne – One Million</option>
+                  <option value="m2">Bulgari – Aqua Amara</option>
+                  <option value="m3">Giorgio Armani – Acqua di Gio</option>
+                  <option value="m4">Christian Dior – Sauvage</option>
+                  <option value="m5">Versace – Eros</option>
+                  <option value="m6">Tom Ford – Neroli Portofino</option>
+                  <option value="m7">Chanel – Allure Homme Sport</option>
+                  <option value="m8">YSL – La Nuit de l’Homme</option>
+                  <option value="m9">Paco Rabanne – Invictus</option>
+                  <option value="m10">Carolina Herrera – 212MEN</option>
+                  <option value="w1">Coco Chanel – Mademoiselle</option>
+                  <option value="w2">Paco Rabanne - Lady Million</option>
+                  <option value="w3">Armani – Because It’s You: Because It’s You</option>
+                  <option value="w4">YSL – Black Opium</option>
+                  <option value="w5">Hugo Boss – The Scent</option>
+                  <option value="w6">Armani - Si Passione</option>
+                  <option value="w7">Tom Ford – Tobacco Vanilla</option>
+                  <option value="w8">Dolce Gabbana – Light Blue</option>
+                  <option value="w9">Christian Dior – Ambre Nuit</option>
+                  <option value="w10">Kilian - Good girl gone bad</option>
+                </select>
+              </div>
               <div class="form-group">
                 <input type="text" placeholder="Имя" aria-label="Имя" class="form-control"></input>
               </div>
@@ -1414,7 +1417,7 @@
             </button>
           </div>
           <div class="modal-body after-order-body">
-            <button class="welcome-button">Ок</button>
+            <button class="welcome-button" data-dismiss="modal">Ок</button>
           </div>
         </div>
       </div>
@@ -1448,6 +1451,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/jquery.selectric.js" charset="utf-8"></script>
   <script src="js/tocca.min.js" charset="utf-8"></script>
   <script src="js/index.js?v008" charset="utf-8"></script>
 </body>

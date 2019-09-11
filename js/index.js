@@ -57,11 +57,13 @@ function onPreviousAction(currentElement) {
   previousCatalogSliderElement.removeClass("d-none");
 }
 
+$('select').selectric();
+
 $(".nav-link").click(function(){
   $("#navigation-bar").removeClass("open");
   $(".navbar-collapse").removeClass("show");
   $("body").removeClass("navbar-open");
-})
+});
 
 $("button > svg").on("click", function(e) {
   e.stopPropagation();
