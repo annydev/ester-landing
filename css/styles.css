@@ -7,7 +7,7 @@ body {
 }
 
 button>* {
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 a:focus,

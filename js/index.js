@@ -4,10 +4,29 @@ window.onload = function() {
   }, 500);
 };
 
-$("button > svg").on("click", function(e) {
-  e.stopPropagation();
-  e.preventDefault();
-});
+function scrollToAnchor(hash) {
+  var target = $(hash);
+  var headerHeight = $("#navigation-bar").height() + 5; // Get fixed header height
+
+  target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+
+  if (target.length) {
+    $('html,body').animate({
+      scrollTop: target.offset().top - headerHeight
+    }, 100);
+    return false;
+  }
+}
+
+if (window.location.hash) {
+  scrollToAnchor(window.location.hash);
+}
+
+function toggleNavbar(){
+  $("#navigation-bar").toggleClass("open");
+  $(".navbar-collapse").toggleClass("show");
+  $("body").toggleClass("navbar-open");
+}
 
 function onNextAction(currentElement) {
   var closestParfumeContainer = $(currentElement).closest(".parfume-container");
@@ -37,6 +56,24 @@ function onPreviousAction(currentElement) {
 
   previousCatalogSliderElement.removeClass("d-none");
 }
+
+$(".nav-link").click(function(){
+  $("#navigation-bar").removeClass("open");
+  $(".navbar-collapse").removeClass("show");
+  $("body").removeClass("navbar-open");
+})
+
+$("button > svg").on("click", function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+});
+
+$("a[href*=\\#]:not([href=\\#])").click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+    scrollToAnchor(this.hash);
+  }
+});
 
 $(".next-button").click(function() {
   var currentButton = $(this);
@@ -157,9 +194,7 @@ $(".map-link").click(function() {
 });
 
 $(".navbar-toggler").click(function() {
-  $("#navigation-bar").toggleClass("open");
-  $(".navbar-collapse").toggleClass("show");
-  $("body").toggleClass("navbar-open");
+  toggleNavbar();
 });
 
 $(".show-description-btn, .hide-description-btn").click(function() {
