@@ -6,6 +6,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+button>* {
+  pointer-events: none;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
 h1, h3 {
   font-weight: 600;
 }
@@ -97,10 +106,6 @@ h5, h6 {
   display: block;
 }
 
-.logo {
-  width: 138px;
-}
-
 .ru-ro {
   font-size: 16px;
   color: #FFFFFF;
@@ -137,14 +142,14 @@ h5, h6 {
 }
 
 .welcome-text {
-  padding: 100px 35px;
+  width: 65%;
+  padding: 100px 0;
   color: #FFFFFF;
 }
 
 .welcome-button {
   font-weight: 600;
   font-size: 18px;
-  width: 260px;
   height: 70px;
   color: #FFFFFF;
   background: #2D9CDB;
@@ -158,7 +163,6 @@ h5, h6 {
   color: #2D9CDB;
   background: #FFFFFF;
   border: 1px solid #2D9CDB;
-  width: 260px;
   height: 70px;
   border-radius: 5px;
 }
@@ -171,15 +175,8 @@ h5, h6 {
   font-size: 48px;
 }
 
-.big-h1 {
-  width: 494px;
-  height: 112px;
-}
-
 .big-heading p {
   padding-top: 20px;
-  width: 445px;
-  height: 68px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -227,18 +224,15 @@ h5, h6 {
 }
 
 .cards-title {
+  text-align: center;
   margin: auto;
   color: #FFFFFF;
   font-size: 48px;
   line-height: 64px;
-  width: 679px;
-  height: 34px;
   padding-bottom: 112px;
 }
 
 .card-title h5 {
-  width: 114px;
-  height: 29px;
   font-weight: 600;
   font-size: 22px;
   line-height: 29px;
@@ -278,8 +272,6 @@ h5, h6 {
 .advantages-title h1 {
   color: #222222;
   text-align: center;
-  width: 815px;
-  height: 102px;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
@@ -317,7 +309,7 @@ h5, h6 {
 }
 
 .text-description-right, p .text-description-left, p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -339,11 +331,11 @@ h5, h6 {
 }
 
 .catalog-title h1 {
+  text-align: center;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
-  width: 460px;
-  height: 64px;
+  ;
   margin: auto;
   color: #222222;
 }
@@ -377,6 +369,8 @@ h5, h6 {
 }
 
 .catalog-text {
+  display: flex;
+  flex-direction: column;
   padding-left: 25px;
 }
 
@@ -392,12 +386,11 @@ h5, h6 {
 }
 
 .catalog-description {
+  flex-grow: 1;
   font-family: Montserrat;
   font-style: normal;
   font-size: 16px;
   line-height: 25px;
-  width: 530px;
-  height: 243px;
 }
 
 .action-button:hover {
@@ -408,18 +401,13 @@ h5, h6 {
   height: 70px;
 }
 
-.catalog-image {
-  width: 500px;
-  height: 483px;
-}
-
 .cards-carousel-padding {
   padding: 20px 69px;
 }
 
 .grid-for-mobile {
   display: grid;
-  grid-template-columns: 75% 1fr 1fr;
+  grid-template-columns: 70% 15% 15%;
 }
 
 .grid-for-mobile .previous-button-container {
@@ -462,7 +450,6 @@ h5, h6 {
 .vector-button {
   padding: 25px;
   background-color: transparent;
-  width: 70px;
   height: 70px;
   border-radius: 5px;
   border: solid;
@@ -503,7 +490,7 @@ h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
-  padding: 100px 58px;
+  padding: 0 58px;
 }
 
 .client-body-text {
@@ -514,9 +501,7 @@ h5, h6 {
 }
 
 .feedback-heading {
-  padding: 65px 45px;
-  width: 569px;
-  height: 98px;
+  padding: 65px 0;
   text-align: center;
   color: #FFFFFF;
 }
@@ -537,10 +522,8 @@ h5, h6 {
 }
 
 .being-sales-heading {
-  width: 385px;
-  height: 49px;
   text-align: center;
-  padding: 23px 0 96px;
+  padding: 77px 0 36px;
   color: #FFFFFF;
 }
 
@@ -594,24 +577,20 @@ h5, h6 {
 
 .right-part h3 {
   color: #222222;
-  width: 505px;
-  height: 113px;
   font-weight: 500;
   font-size: 30px;
 }
 
 .right-part p {
   color: #222222;
-  width: 436px;
-  height: 51px;
   font-weight: 300;
   font-size: 20px;
 }
 
 .right-part button {
+  padding: 0 45px;
   font-weight: bold;
   font-size: 18px;
-  width: 273px;
   height: 70px;
   color: #FFFFFF;
   background: #2D9CDB;
@@ -621,7 +600,6 @@ h5, h6 {
 }
 
 .right-part button:hover {
-  width: 273px;
   height: 70px;
   color: #2D9CDB;
   background: #FFFFFF;
@@ -641,21 +619,17 @@ h5, h6 {
 .left-part h3 {
   font-weight: 500;
   font-size: 30px;
-  width: 291px;
-  height: 113px;
 }
 
 .left-part p {
-  width: 396px;
-  height: 51px;
   font-weight: 300;
   font-size: 20px;
 }
 
 .left-part button {
+  padding: 0 45px;
   font-weight: bold;
   font-size: 18px;
-  width: 273px;
   height: 70px;
   color: #2D9CDB;
   background: #FFFFFF;
@@ -671,8 +645,6 @@ h5, h6 {
 }
 
 .how-it-works-heading {
-  width: 473px;
-  height: 64px;
   text-align: center;
   padding: 60px 0 65px;
 }
@@ -708,6 +680,8 @@ h5, h6 {
 }
 
 .circle {
+  padding: 10px;
+  text-align: center;
   width: 74px;
   height: 74px;
   margin: auto;
@@ -719,8 +693,6 @@ h5, h6 {
 }
 
 .circle-numbers {
-  width: 14px;
-  height: 48px;
   font-size: 38px;
 }
 
@@ -729,15 +701,12 @@ h5, h6 {
 }
 
 .cards-work-content h5 {
-  width: 265px;
   font-weight: 600;
   font-size: 22px;
   color: #222222;
 }
 
 .cards-work-content p {
-  width: 279px;
-  height: 96px;
   font-weight: normal;
   font-size: 18px;
   color: rgba(34, 34, 34, 0.7);
@@ -749,8 +718,7 @@ h5, h6 {
 }
 
 .map-title {
-  width: 644px;
-  height: 64px;
+  text-align: center;
   padding: 87px 0 105px;
   margin: auto;
 }
@@ -791,7 +759,12 @@ h5, h6 {
 }
 
 .map-border {
-  margin-bottom: 6px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
 .map-border a {
@@ -828,6 +801,7 @@ h5, h6 {
 .accordion-title {
   background-color: #2D9CDB;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .first-span {
@@ -842,11 +816,17 @@ h5, h6 {
   padding: 15px;
 }
 
-.accordions .accordion-title .fa-chevron-up {
+.accordions .accordion-title {
+  height: 73px;
+  font-size: 18px;
+  padding: 25px;
+}
+
+.accordions .accordion-title .up-icon {
   display: block;
 }
 
-.accordions .accordion-title .fa-chevron-down {
+.accordions .accordion-title .up-black-icon {
   display: none;
 }
 
@@ -857,11 +837,11 @@ h5, h6 {
   border-radius: 5px;
 }
 
-.accordions .accordion-title.collapsed .fa-chevron-up {
+.accordions .accordion-title.collapsed .up-icon {
   display: none;
 }
 
-.accordions .accordion-title.collapsed .fa-chevron-down {
+.accordions .accordion-title.collapsed .up-black-icon {
   display: block;
 }
 
@@ -883,8 +863,6 @@ h5, h6 {
 }
 
 .footer-part h3 {
-  width: 301px;
-  height: 23px;
   margin: auto;
   font-weight: 600;
   font-size: 36px;
@@ -895,8 +873,6 @@ h5, h6 {
 }
 
 .footer-email {
-  width: 284px;
-  height: 19px;
   margin: auto;
   font-weight: normal;
   font-size: 24px;
@@ -995,268 +971,4 @@ h5, h6 {
   right: -25px;
   top: 50%;
   background-color: white;
-}
-
-/*MOBILE VERSION*/
-@media only screen and (max-device-width: 768px) {
-  body.navbar-open {
-    position: fixed;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-  }
-
-  /*NAVIGATION MENU*/
-  #navigation-bar.open {
-    background-color: #333333 !important;
-  }
-
-  .left-part-navigation {
-    display: grid;
-    position: fixed;
-    top: 60px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    background-color: #333333;
-  }
-
-  .left-part-navigation .navigation-elements {
-    font-size: 23px;
-    margin: auto;
-    text-align: center;
-    line-height: 61px;
-  }
-
-  .left-part-navigation .li-mobile {
-    position: fixed;
-    bottom: 33px;
-    line-height: 23px;
-    text-align: center;
-    left: 0;
-    right: 0;
-  }
-
-  /*WELCOME PART*/
-  .welcome-text {
-    text-align: center;
-    padding: 240px 0 150px;
-  }
-
-  .big-heading {
-    padding: 0;
-  }
-
-  .big-heading h1 {
-    padding: 0;
-    font-size: 30px;
-  }
-
-  .welcome-button-right button {
-    width: 69px;
-    height: 69px;
-    border-color: white;
-  }
-
-  /*WELCOME CARDS*/
-  .cards-centering {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-  }
-
-  .cards {
-    padding: 25px;
-  }
-
-  .cards-title {
-    font-size: 30px;
-    margin-top: 0;
-  }
-
-  /*PARFUM ADVANTAGES*/
-  .parfum-description {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 0;
-    padding: 0 12px;
-  }
-
-  .text-description-mobile {
-    order: 2;
-  }
-
-  .image-description-mobile {
-    order: 1;
-  }
-
-  .text-description p {
-    font-size: 14px;
-  }
-
-  .text-description h4 {
-    font-size: 20px;
-  }
-
-  .advantages-title {
-    padding: 0;
-  }
-
-  .advantages-title h1 {
-    font-size: 30px;
-    padding: 36px 37px 35px;
-  }
-
-  .image-rounded {
-    width: 100%;
-  }
-
-  /*PARFUM CATALOG HEAD*/
-  .gender-choosing-buttons {
-    margin: 20px 40px;
-  }
-
-  /*CATALOG SLIDER*/
-  .grid-for-mobile {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .previous-button-container {
-    order: 1;
-  }
-
-  .next-button-container {
-    order: 3;
-    text-align: right;
-  }
-
-  .catalog-sliders {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .catalog-slider-button {
-    padding: 25px;
-    font-size: 18px;
-    margin: 16px 25px;
-    order: 4;
-    grid-column: span 3 / auto;
-  }
-
-  .cards-carousel-padding {
-    padding: 0 6px 20px;
-  }
-
-  .catalog-text {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .catalog-text h3 {
-    padding-top: 37px;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .catalog-description {
-    order: 5;
-    display: none;
-  }
-
-  .visibility-buttons {
-    display: block;
-    text-align: center;
-  }
-
-  .show-description-btn,
-  .hide-description-btn {
-    background: none;
-    border: none;
-    border-bottom: 1px dashed #2d9cdb;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 15px;
-  }
-
-  .vector-button {
-    width: 43px;
-    height: 41px;
-    background-color: #FFFFFF;
-  }
-
-  .catalog-text-p-2 {
-    order: 2;
-  }
-
-  .catalog-text-p-2 {
-    width: 100%;
-  }
-
-  /*CLIENTS FEEDBACK*/
-  .feedback-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .feedback-heading {
-    padding: 75px 0 40px;
-  }
-
-  .feedback-heading h1 {
-    font-size: 30px;
-  }
-
-  /*BUY PARFUM FOR SALE*/
-  .being-sales-heading h1 {
-    font-size: 30px;
-  }
-
-  .two-parts {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .right-part {
-    background-image: none;
-  }
-
-  .right-part,
-  .left-part {
-    text-align: center;
-    padding: 25px;
-  }
-
-  .right-part h3,
-  .left-part h3 {
-    font-size: 20px;
-  }
-
-  /*HOW IT WORKS*/
-  .how-it-works-heading {
-    padding: 60px 44px 0;
-  }
-
-  .how-it-works-heading h1 {
-    font-size: 30px;
-  }
-
-  .how-it-works-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  /*MAO*/
-  .map-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .map-part {
-    padding: 0;
-  }
 }

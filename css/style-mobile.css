@@ -1,0 +1,331 @@
+/*MOBILE VERSION*/
+@media only screen and (max-device-width: 768px) {
+  body.navbar-open {
+    position: fixed;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /*NAVIGATION MENU*/
+  #navigation-bar.open {
+    background-color: #333333 !important;
+  }
+
+  .left-part-navigation {
+    display: grid;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    left: 0px;
+    background-color: #333333;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .left-part-navigation .navigation-elements {
+    font-size: 23px;
+    margin: auto;
+    text-align: center;
+    line-height: 61px;
+  }
+
+  .left-part-navigation .li-mobile {
+    position: fixed;
+    bottom: 33px;
+    line-height: 23px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+
+  /*WELCOME PART*/
+  .welcome-text {
+    width: 100%;
+    text-align: center;
+    padding: 300px 0 150px;
+  }
+
+  #welcome-part::before {
+    top: 0;
+  }
+
+  .big-heading {
+    padding: 0;
+  }
+
+  .big-heading h1 {
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .big-heading p {
+    margin: auto;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .welcome-button {
+    margin-top: 62px;
+  }
+
+  .welcome-button-right button {
+    border-color: white;
+    font-size: 11px;
+  }
+
+  /*WELCOME CARDS*/
+  .cards-centering {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .cards {
+    padding: 25px;
+  }
+
+  .cards-title {
+    padding: 120px 0 40px;
+    text-align: center;
+    line-height: 43px;
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  /*PARFUM ADVANTAGES*/
+  .parfum-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    padding: 55px 12px 0;
+  }
+
+  .parfums-advantages-padding {
+    padding: 0;
+  }
+
+  .advantages-title h1 {
+    line-height: 43px;
+    margin: auto;
+  }
+
+  .text-description-mobile {
+    order: 2;
+  }
+
+  .image-description-mobile {
+    order: 1;
+  }
+
+  .text-description-right {
+    padding: 20px 0 0;
+  }
+
+  .text-description p {
+    font-size: 14px;
+  }
+
+  .text-description h4 {
+    font-size: 20px;
+  }
+
+  .advantages-title {
+    padding: 140px 34px 20px;
+  }
+
+  .advantages-title h1 {
+    font-size: 32px;
+  }
+
+  /*PARFUM CATALOG HEAD*/
+  #parfum-catalog-head {
+    padding: 127px 20px 30px;
+  }
+
+  .catalog-title h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .gender-choosing-buttons {
+    margin: 20px 40px;
+  }
+
+  /*CATALOG SLIDER*/
+  .grid-for-mobile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .previous-button-container {
+    order: 1;
+  }
+
+  .next-button-container {
+    order: 3;
+    text-align: right;
+  }
+
+  .catalog-sliders {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-slider-button {
+    padding: 25px;
+    font-size: 18px;
+    margin: 16px 25px;
+    order: 4;
+    grid-column: span 3 / auto;
+  }
+
+  .cards-carousel-padding {
+    padding: 0 6px 20px;
+  }
+
+  .catalog-text {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-text h3 {
+    padding-top: 37px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .parfume-container .catalog-description {
+    order: 5;
+    padding: 15px;
+    display: none;
+  }
+
+  .parfume-container.opened .catalog-description {
+    display: block;
+  }
+
+  .visibility-buttons {
+    display: block;
+    text-align: center;
+  }
+
+  .show-description-btn,
+  .hide-description-btn {
+    background: none;
+    border: none;
+    border-bottom: 1px dashed #2d9cdb;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  .vector-button {
+    padding: 11px;
+    width: 43px;
+    height: 41px;
+    background-color: #FFFFFF;
+  }
+
+  .catalog-text-p-2 {
+    margin: 4px 0;
+    order: 2;
+  }
+
+  .catalog-text-p-2 {
+    width: 100%;
+  }
+
+  /*CLIENTS FEEDBACK*/
+  .feedback-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .feedback-heading {
+    padding: 75px 0 40px;
+  }
+
+  .feedback-heading h1 {
+    font-size: 30px;
+  }
+
+  /*BUY PARFUM FOR SALE*/
+  .being-sales-heading h1 {
+    font-size: 30px;
+  }
+
+  .two-parts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .right-part {
+    background-image: none;
+  }
+
+  .right-part,
+  .left-part {
+    text-align: center;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .right-part h3,
+  .left-part h3 {
+    font-size: 24px;
+  }
+
+  .right-part p,
+  .left-part p {
+    font-size: 18px;
+  }
+
+  /*HOW IT WORKS*/
+  .how-it-works-heading {
+    padding: 60px 44px 0;
+  }
+
+  .how-it-works-heading h1 {
+    font-size: 30px;
+  }
+
+  .how-it-works-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .work-info-cards-p {
+    line-height: 24px;
+  }
+
+  /*MAO*/
+  .map-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .map-title {
+    padding: 87px 0 35px;
+  }
+
+  .map-title h1 {
+    font-size: 32px;
+  }
+
+  .map-part {
+    padding: 0;
+  }
+
+  .accordions .accordion-title {
+    padding: 25px 15px;
+  }
+}

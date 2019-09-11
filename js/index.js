@@ -4,6 +4,11 @@ window.onload = function() {
   }, 500);
 };
 
+$("button > svg").on("click", function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+});
+
 function onNextAction(currentElement) {
   var closestParfumeContainer = $(currentElement).closest(".parfume-container");
   var closestClassCatalogSlider = $(currentElement).closest(".catalog-sliders");
@@ -68,7 +73,6 @@ $(".woman").click(function() {
   $(".women-parfums").removeClass("d-none");
   $(".men-parfums").addClass("d-none");
 });
-
 
 $(document).scroll(function() {
   var $nav = $("#navigation-bar");
@@ -158,24 +162,13 @@ $(".navbar-toggler").click(function() {
   $("body").toggleClass("navbar-open");
 });
 
-$(".show-description-btn").click(function() {
+$(".show-description-btn, .hide-description-btn").click(function() {
   var currentButton = $(this);
-  var currentCatalogText = currentButton.closest(".catalog-text");
-  var currentCatalogDescription = currentCatalogText.find(".catalog-description");
-  var hideButton = currentCatalogText.find(".hide-description-btn");
+  var currentCatalogText = currentButton.closest(".parfume-container");
+  var showDescriptionBtn = currentCatalogText.find(".show-description-btn");
+  var hideDescriptionBtn = currentCatalogText.find(".hide-description-btn");
 
-  currentCatalogDescription.addClass("d-block");
-  currentButton.addClass("d-none");
-  hideButton.removeClass("d-none");
-});
-
-$(".hide-description-btn").click(function() {
-  var currentButton = $(this);
-  var currentCatalogText = currentButton.closest(".catalog-text");
-  var currentCatalogDescription = currentCatalogText.find(".catalog-description");
-  var showButton = currentCatalogText.find(".show-description-btn");
-
-  currentCatalogDescription.removeClass("d-block");
-  currentButton.addClass("d-none");
-  showButton.removeClass("d-none");
+  currentCatalogText.toggleClass("opened");
+  showDescriptionBtn.toggleClass("d-none");
+  hideDescriptionBtn.toggleClass("d-none");
 });

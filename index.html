@@ -9,15 +9,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v004">
+  <link rel="stylesheet" href="css/styles.css?v005">
+  <link rel="stylesheet" href="css/style-mobile.css?v005">
   <title>Ester</title>
 </head>
 
 <body>
-  <section id="loading" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #333333; z-index: 10000; display: grid;">
-    <object class="loading-logo" style="margin: auto;" type="image/svg+xml" data="images/icons/logo.svg">
-      Your browser does not support SVG
-    </object>
+  <section id="loading" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #333333; z-index: 10000;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <object class="loading-logo" style="margin: auto;" type="image/svg+xml" data="images/icons/logo.svg">
+        Your browser does not support SVG
+      </object>
+    </div>
   </section>
   <section id="navigation-bar" class="fixed-top">
     <div class="container">
@@ -61,8 +64,8 @@
   </section>
   <section id="welcome-part">
     <div class="container">
-      <div class="row welcome-text">
-        <div class="big-heading col-lg-7">
+      <div class="welcome-text">
+        <div class="big-heading">
           <div class="big-h1">
             <h1>Автопарфюм,</h1>
             <h1> а не ароматизатор!</h1>
@@ -249,6 +252,7 @@
             <p class="catalog-description">Средиземноморская история Acqua di Gio начинается со всплеска свежести, калабрийского бергамота, нероли и зеленого мандарина. Легкие, акватические оттенки смешиваются с розмарином, хурмой и теплым
               индонезийским пачули, создавая
               одновременно свежий и расслабляющий мужской аромат.</p>
+
             <div class="grid-for-mobile">
               <button name="m3" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -282,6 +286,7 @@
             <p class="catalog-description">Аромат заявлен, как радикально свежий, сырой и благородный одновременно. В составе преобладают тщательно отобранные натуральные ингредиенты. Свежие верхние ноты калабрийского бергамота сталкиваются с
               амброксаном, полученным из ценной
               амбры, и его древесным оттенком.</p>
+
             <div class="grid-for-mobile">
               <button name="m4" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -314,6 +319,7 @@
             <h3>Versace – Eros</h3>
             <p class="catalog-description">Это аромат для сильного, страстного мужчины – хозяина самому себе. Eros окутывает безукоризненные мужские черты в ауру интенсивной, энергичной и яркой смеси из свежих мятных листьев, итальянской лимонной
               цедры и зеленого яблока.</p>
+
             <div class="grid-for-mobile">
               <button name="m5" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -345,8 +351,7 @@
           <div class="catalog-text">
             <h3>Tom Ford – Neroli Portofino</h3>
             <p class="catalog-description">Этот аромат идеально запечатлевает прохладный ветерок, сверкающую чистую воду и пышную листву Итальянской Ривьеры. В этом переосмыслении классической туалетной воды присутствуют свежие цитрусовые масла,
-              удивительные цветочные нотки и
-              янтарные оттенки, которые оставляют яркие и устойчивые впечатления.
+              удивительные цветочные нотки и янтарные оттенки, которые оставляют яркие и устойчивые впечатления.
             </p>
             <div class="grid-for-mobile">
               <button name="m6" class="catalog-slider-button action-button">Заказать этот аромат</button>
@@ -379,8 +384,7 @@
           <div class="catalog-text">
             <h3>Chanel – Allure Homme Sport</h3>
             <p class="catalog-description">Живой, бодрящий аромат, в котором преобладают усиленные ноты свежести и чувственности. Аромат для мужчины, который любит свежий воздух и живет так, как ему хочется. Игристая свежесть итальянского мандарина,
-              усиленная кристаллическим
-              аккордом, смешивается с чистыми, интенсивными нотами кедра. Чувственные бобы тонка с оттенком миндаля и обволакивающими нотами белого мускуса оставляют глубокий и крепкий шлейф.
+              усиленная кристаллическим аккордом, смешивается с чистыми, интенсивными нотами кедра. Чувственные бобы тонка с оттенком миндаля и обволакивающими нотами белого мускуса оставляют глубокий и крепкий шлейф.
             </p>
             <div class="grid-for-mobile">
               <button name="m7" class="catalog-slider-button action-button">Заказать этот аромат</button>
@@ -413,8 +417,8 @@
           <div class="catalog-text">
             <h3>YSL – La Nuit de l’Homme</h3>
             <p class="catalog-description">La Nuit de l’Homme от Yves Saint Laurent – это богатый и свежий аромат для мужчин. Дебютировавший в 2009 году, этот мощный парфюм от культового дизайнерского дома Yves Saint Laurent наполнен контрастами.
-              Композиция этой несомненно
-              мужской туалетной воды начинается со сладкого, пряного кардамона и переходит к самому сердцу свежего бергамота, древесным ноткам виргинского кедра и яркой лаванды. Богатые заключительные ноты, в которые также входит землистый ветивер,
+              Композиция этой несомненно мужской туалетной воды начинается со сладкого, пряного кардамона и переходит к самому сердцу свежего бергамота, древесным ноткам виргинского кедра и яркой лаванды. Богатые заключительные ноты, в которые также
+              входит землистый ветивер,
               оставляют за собой аромат, придающий некоторую тайну. Пользуйтесь этим парфюмом, чтобы четко обозначить свою силу и многогранность.
             </p>
             <div class="grid-for-mobile">
@@ -485,6 +489,7 @@
             <p class="catalog-description">212 Men от Carolina Herrera – туалетная вода с мужским ароматом, черпающая вдохновение из лесов и садов. Этот сложный парфюм был выпущен в 1999 году домом Carolina Herrera известен пряностями и древесным,
               зеленым цветочным ароматом «петтитгрейн» в своих вступительных нотах. Сердце парфюма продолжает тему несколькими нотами, включая имбирь и гардению, а затем переходит к гладкой мульти-нотной основе насыщенного лабданума, напоминающего
               янтарь. Этот аромат отлично подходит и для работы, и для отдыха в любой весенний или летний день.</p>
+
             <div class="grid-for-mobile">
               <button name="m10" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -518,8 +523,7 @@
           <div class="catalog-text">
             <h3>Coco Chanel – Mademoiselle</h3>
             <p class="catalog-description">Это туалетная вода, выпущенная Chanel в 2002 году. Этот цитрусовый аромат создал Жак Полж. Эта версия легче и слаще той, что вышла через год после выхода оригинального парфюма и парфюмированной воды. Данному
-              аромату присущи верхние
-              ноты апельсина, бергамота и грейпфрута. В его средние ноты входят жасмин, роза и личи. Основные ноты состоят из пачули, бурбонная ваниль, ветивер и белый мускус. Это устойчивый аромат с умеренным шлейфом.</p>
+              аромату присущи верхние ноты апельсина, бергамота и грейпфрута. В его средние ноты входят жасмин, роза и личи. Основные ноты состоят из пачули, бурбонная ваниль, ветивер и белый мускус. Это устойчивый аромат с умеренным шлейфом.</p>
             <div class="grid-for-mobile">
               <button name="w1" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -586,8 +590,7 @@
           <div class="catalog-text">
             <h3>Armani – Because It’s You: Because It’s You </h3>
             <p class="catalog-description">радостный, очаровательный и яркий аромат: попросту неотразимый, подобно спелой малине в своей совершенной и элегантной естественности в сочетании с нотами нероли. Аромат становится соблазнительным благодаря
-              смеси ванили с мускусом,
-              которая раскрывает его многослойную и невероятно глубокую чувственность.</p>
+              смеси ванили с мускусом, которая раскрывает его многослойную и невероятно глубокую чувственность.</p>
             <div class="grid-for-mobile">
               <button name="w3" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -619,8 +622,8 @@
           <div class="catalog-text">
             <h3>YSL – Black Opium</h3>
             <p class="catalog-description">Брызгаясь туалетной водой Black Opium, вы выбираете роскошный и густой аромат. Это классический женский аромат, выпущенный в 2014 году Yves Saint Laurent, открывающийся верхними нотами розового перца и
-              сладкого апельсинового цвета –
-              прекрасный способ начать день со ощущения чистоты и свежести. Сердце аромата состоит из интенсивных, но очень знакомых нот кофе, смягченных сладкими чертами жасмина. В основе аромата лежат успокаивающие и уютные ноты теплой ванили.</p>
+              сладкого апельсинового цвета – прекрасный способ начать день со ощущения чистоты и свежести. Сердце аромата состоит из интенсивных, но очень знакомых нот кофе, смягченных сладкими чертами жасмина. В основе аромата лежат успокаивающие и
+              уютные ноты теплой ванили.</p>
             <div class="grid-for-mobile">
               <button name="w4" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -652,8 +655,7 @@
           <div class="catalog-text">
             <h3>Hugo Boss – The Scent</h3>
             <p class="catalog-description">К оригинальной парфюмированной воде теперь присоединилась и туалетная вода, создание которой вдохновила весенняя красота. Новый элегантный аромат открывается энергичным всплеском розового перца и зеленого
-              мандарина, за которым следует
-              букет сладких фрезий и оранжевого цвета. Заразительный аромат какао, лежащий в основе, удерживается все время, пока выветриваются более легкие верхние ноты.</p>
+              мандарина, за которым следует букет сладких фрезий и оранжевого цвета. Заразительный аромат какао, лежащий в основе, удерживается все время, пока выветриваются более легкие верхние ноты.</p>
             <div class="grid-for-mobile">
               <button name="w5" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -685,8 +687,7 @@
           <div class="catalog-text">
             <h3>Armani - Si Passione</h3>
             <p class="catalog-description"> Этот яркий, фруктово-цветочный аромат с нотами розы и древесной ванили был создан для страстной, женственной и свободной женщины. Яркий красный цвет бутылочки отражает суть страсти и, со слов самого мистера
-              Армани, это «неотразимая
-              смесь грации, силы и независимости духа».
+              Армани, это «неотразимая смесь грации, силы и независимости духа».
             </p>
             <div class="grid-for-mobile">
               <button name="w6" class="catalog-slider-button action-button">Заказать этот аромат</button>
@@ -785,8 +786,7 @@
           <div class="catalog-text">
             <h3>Christian Dior – Ambre Nuit</h3>
             <p class="catalog-description catalog-text-p-1">Этот аромат балансирует на границе между двумя крайностями. В некотором роде, это ароматическое воплощение «Красавицы и чудовища». В этом аромате сочетаются глубокий, животный характер
-              янтаря и нежная,
-              бархатистая турецкая роза. Этот мощный дуэт подобен ночной волне янтаря, в которой во время притяжения друг ко другу противоположностей переплетаются сила и нежность.</p>
+              янтаря и нежная, бархатистая турецкая роза. Этот мощный дуэт подобен ночной волне янтаря, в которой во время притяжения друг ко другу противоположностей переплетаются сила и нежность.</p>
             <div class="grid-for-mobile">
               <button name="w9" class="catalog-slider-button action-button">Заказать этот аромат</button>
               <div class="previous-button-container">
@@ -838,6 +838,10 @@
               </div>
               <p class="catalog-text-p-2">10 из 10</p>
             </div>
+            <div class="visibility-buttons">
+              <button class="show-description-btn">Посмотреть описание</button>
+              <button class="hide-description-btn d-none">Скрыть описание</button>
+            </div>
           </div>
         </div>
       </div>
@@ -853,7 +857,12 @@
           <img src="images/clients/01.png" class="card-img-top img-fluid" alt="andrei salpuc">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i>Andrei Salpuc</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Andrei Salpuc</span>
+          </h5>
           <p class="card-text">Surprins plăcut de aroma Christian Dior - Sauvage. Mulțumesc Ester pentru ambianța placută în automobilul meu.</p>
         </div>
       </div>
@@ -862,7 +871,12 @@
           <img src="images/clients/02.png" class="card-img-top img-fluid" alt="anna platon">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i>Анна Платон</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Анна Платон</span>
+          </h5>
           <p class="card-text">Aroma Kilian mi-a dat lumea peste cap. Calitate excelentă, mersi mult.</p>
         </div>
       </div>
@@ -871,7 +885,12 @@
           <img src="images/clients/03.png" class="card-img-top img-fluid" alt="max lupascu">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i>Макс Лупашку</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Макс Лупашку</span>
+          </h5>
           <p class="card-text">Друзья подарили автопарфюм от компании ESTER. Аромат очень приятный и ненавязчивый. Я даже не знал, что есть автопарфюмы с ароматами мировых брендов духов. Обязательно буду заказывать ещё.</p>
         </div>
       </div>
@@ -880,7 +899,12 @@
           <img src="images/clients/04.png" class="card-img-top img-fluid" alt="anna bikerski">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i>Анна Бикерски</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Анна Бикерски</span>
+          </h5>
           <p class="card-text">Wow, calitate superba. Mersiii!</p>
         </div>
       </div>
@@ -889,7 +913,12 @@
           <img src="images/clients/05.png" class="card-img-top img-fluid" alt="cristina boban">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i>Кристина Бобан</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Кристина Бобан</span>
+          </h5>
           <p class="card-text">Наконец-то я нашла свой любимый парфюм Dolce & Gabbana - Light Blue и для машины.</p>
         </div>
       </div>
@@ -898,8 +927,12 @@
           <img src="images/clients/06.png" class="card-img-top img-fluid" alt="elena turcanu">
         </a>
         <div class="card-body client-body-text">
-          <h5 class="card-title"><i class="fab fa-facebook-square"></i></i>
-            Elena Turcanu</h5>
+          <h5 class="card-title">
+            <object class="facebook-white-icon" type="image/svg+xml" data="images/icons/facebook-white.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Elena Turcanu</span>
+          </h5>
           <p class="card-text">Sunt super îndragostită în Mademoiselle, o echipa de nota 10. Multumesc de aromă!</p>
         </div>
       </div>
@@ -963,7 +996,7 @@
     <div class="card-deck container how-it-works-cards">
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">1</p>
+          <span class="circle-numbers">1</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Подписание договора</h5>
@@ -972,7 +1005,7 @@
       </div>
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">2</p>
+          <span class="circle-numbers">2</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Оплата</h5>
@@ -981,7 +1014,7 @@
       </div>
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">3</p>
+          <span class="circle-numbers">3</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Доставка товара</h5>
@@ -991,7 +1024,7 @@
       </div>
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">4</p>
+          <span class="circle-numbers">4</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Подготовка сотрудников</h5>
@@ -1000,7 +1033,7 @@
       </div>
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">5</p>
+          <span class="circle-numbers">5</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Поддержка</h5>
@@ -1009,7 +1042,7 @@
       </div>
       <div class="card work-info-cards">
         <div class="circle">
-          <p class="circle-numbers">6</p>
+          <span class="circle-numbers">6</span>
         </div>
         <div class="card-body cards-work-content">
           <h5 class="card-title">Корпоративные мероприятия</h5>
@@ -1027,147 +1060,179 @@
   </section>
   <section id="map">
     <div class="container map-container">
-      <div class="accordions">
-        <div class="accordion-item accordion-one">
-          <div class="card">
-            <div class="card-header d-flex accordion-title" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
-              <div class="flex-grow-1">
-                <span class="first-span">Буюканы</span>
-                <span class="second-span">(15 локаций)</span>
-              </div>
-              <div class="collapsed-elements">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down"></i>
-              </div>
+      <div id="mapAccordion" class="accordions">
+        <div class="card accordion-item accordion-one">
+          <div class="card-header d-flex accordion-title" data-toggle="collapse" data-target="#collapseOne">
+            <div class="flex-grow-1">
+              <span class="first-span">Буюканы</span>
+              <span class="second-span">(15 локаций)</span>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
-              <div class="card-body">
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="0">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Petru Movila, 41
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="1">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Bulgara, 39
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="2">
-                    <i class="fas fa-map-marker-alt"></i>
-                    bd. Ștefan cel Mare, 12
-                  </a>
-                </div>
+            <div class="collapsed-elements">
+              <object class="up-icon" type="image/svg+xml" data="images/icons/up.svg">
+                Your browser does not support SVG
+              </object>
+              <object class="up-black-icon" type="image/svg+xml" data="images/icons/up-black.svg">
+                Your browser does not support SVG
+              </object>
+            </div>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#mapAccordion">
+            <div class="card-body">
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="0">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  <span>str. Petru Movila, 41</span>
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="1">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Bulgara, 39
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="2">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  bd. Ștefan cel Mare, 12
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item accordion-two">
-          <div class="card">
-            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseTwo" id="headingTwo">
-              <div class="flex-grow-1">
-                <span class="first-span">Чеканы</span>
-                <span class="second-span">(16 локаций)</span>
-              </div>
-              <div class="collapsed-elements">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down"></i>
-              </div>
+        <div class="card accordion-item accordion-two">
+          <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseTwo">
+            <div class="flex-grow-1">
+              <span class="first-span">Чеканы</span>
+              <span class="second-span">(16 локаций)</span>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne">
-              <div class="card-body">
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="3">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Petru Movila, 41
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="4">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Bulgara, 39
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="5">
-                    <i class="fas fa-map-marker-alt"></i>
-                    bd. Ștefan cel Mare, 12
-                  </a>
-                </div>
+            <div class="collapsed-elements">
+              <object class="up-icon" type="image/svg+xml" data="images/icons/up.svg">
+                Your browser does not support SVG
+              </object>
+              <object class="up-black-icon" type="image/svg+xml" data="images/icons/up-black.svg">
+                Your browser does not support SVG
+              </object>
+            </div>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#mapAccordion">
+            <div class="card-body">
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="3">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Petru Movila, 41
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="4">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Bulgara, 39
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="5">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  bd. Ștefan cel Mare, 12
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item accordion-three">
-          <div class="card">
-            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseThree" id="headingThree">
-              <div class="flex-grow-1">
-                <span class="first-span">Рышкановка</span>
-                <span class="second-span">(16 локаций)</span>
-              </div>
-              <div class="collapsed-elements">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down"></i>
-              </div>
+        <div class="card accordion-item accordion-three">
+          <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseThree">
+            <div class="flex-grow-1">
+              <span class="first-span">Рышкановка</span>
+              <span class="second-span">(16 локаций)</span>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingOne">
-              <div class="card-body">
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="6">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Petru Movila, 41
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="7">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Bulgara, 39
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="8">
-                    <i class="fas fa-map-marker-alt"></i>
-                    bd. Ștefan cel Mare, 12
-                  </a>
-                </div>
+            <div class="collapsed-elements">
+              <object class="up-icon" type="image/svg+xml" data="images/icons/up.svg">
+                Your browser does not support SVG
+              </object>
+              <object class="up-black-icon" type="image/svg+xml" data="images/icons/up-black.svg">
+                Your browser does not support SVG
+              </object>
+            </div>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#mapAccordion">
+            <div class="card-body">
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="6">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Petru Movila, 41
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="7">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Bulgara, 39
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="8">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  bd. Ștefan cel Mare, 12
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item accordion-four">
-          <div class="card">
-            <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseFour" id="headingFour">
-              <div class="flex-grow-1">
-                <span class="first-span">Ботаника</span>
-                <span class="second-span">(16 локаций)</span>
-              </div>
-              <div class="collapsed-elements">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down"></i>
-              </div>
+        <div class="card accordion-item accordion-four">
+          <div class="card-header d-flex accordion-title collapsed" data-toggle="collapse" data-target="#collapseFour">
+            <div class="flex-grow-1">
+              <span class="first-span">Ботаника</span>
+              <span class="second-span">(16 локаций)</span>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingOne">
-              <div class="card-body">
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="9">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Petru Movila, 41
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="10">
-                    <i class="fas fa-map-marker-alt"></i>
-                    str. Bulgara, 39
-                  </a>
-                </div>
-                <div class="map-border">
-                  <a href="javascript:void(0)" class="map-link" number="11">
-                    <i class="fas fa-map-marker-alt"></i>
-                    bd. Ștefan cel Mare, 12
-                  </a>
-                </div>
+            <div class="collapsed-elements">
+              <object class="up-icon" type="image/svg+xml" data="images/icons/up.svg">
+                Your browser does not support SVG
+              </object>
+              <object class="up-black-icon" type="image/svg+xml" data="images/icons/up-black.svg">
+                Your browser does not support SVG
+              </object>
+            </div>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#mapAccordion">
+            <div class="card-body">
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="9">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Petru Movila, 41
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="10">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  str. Bulgara, 39
+                </a>
+              </div>
+              <div class="map-border">
+                <a href="javascript:void(0)" class="map-link" number="11">
+                  <object class="location-icon" type="image/svg+xml" data="images/icons/location.svg">
+                    Your browser does not support SVG
+                  </object>
+                  bd. Ștefan cel Mare, 12
+                </a>
               </div>
             </div>
           </div>
@@ -1371,14 +1436,11 @@
     </div>
   </section>
 
-  <script src="https://kit.fontawesome.com/20cafeafe6.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/tocca.min.js" charset="utf-8"></script>
-  <script src="js/index.js?v004" charset="utf-8"></script>
-
-  <script src="https://code.jivosite.com/widget.js" data-jv-id="eJA2wqkfxl" async></script>
+  <script src="js/index.js?v005" charset="utf-8"></script>
 </body>
 
 </html>
