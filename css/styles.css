@@ -7,7 +7,7 @@ body {
 }
 
 button>* {
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 a:focus,
@@ -113,9 +113,11 @@ h5, h6 {
 
 .display-blue:hover,
 .display-blue:hover h3,
+.display-blue:hover a,
 .display-blue:hover .contact-phone,
 .display-blue:hover .contact {
   color: #2D9CDB;
+  text-decoration: none;
 }
 
 .navigation-elements {
@@ -862,10 +864,22 @@ h5, h6 {
   padding: 62px 0 20px;
 }
 
+.footer-part a {
+  color: #222222;
+}
+
 .footer-part h3 {
   margin: auto;
   font-weight: 600;
   font-size: 36px;
+}
+
+.footer-part .icons a {
+  cursor: pointer;
+}
+
+.footer-part .icons a:hover {
+  text-decoration: none;
 }
 
 .footer-icons {
@@ -884,6 +898,18 @@ h5, h6 {
 /*MODALS*/
 #modals {
   font-family: "Monsterrat", sans-serif;
+}
+
+.modal-dialog {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal .close-button {
+  background-color: transparent;
+  border: none;
 }
 
 .modal-heading {
