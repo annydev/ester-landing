@@ -8,6 +8,10 @@
   }
 
   /*NAVIGATION MENU*/
+  #navigation-bar {
+    border: none;
+  }
+  
   #navigation-bar.open {
     background-color: #333333 !important;
   }
