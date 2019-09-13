@@ -87,9 +87,9 @@ var IndexModule = (function() {
   }
 
   function sendRequest(request){
-    //sendDataToGoogle(request);
+    sendDataToGoogle(request);
     sendDataToTelegram(request);
-    //window.location.href = window.location.href + "multumesc";
+    window.location.href = window.location.href + "multumesc";
   }
 
   function isFormValid(currentModal) {
