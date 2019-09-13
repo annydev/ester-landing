@@ -43,6 +43,12 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
 /* WELCOME PART*/
 #welcome-part {
   background-image: url("../images/welcome-image.png");
@@ -120,6 +126,15 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
 }
 
+.navbar-brand {
+  margin-right: 72px;
+}
+
+.nav-link {
+  padding: 0;
+  padding-right: 30px;
+}
+
 .ru-ro {
   font-size: 16px;
   color: #FFFFFF;
@@ -142,7 +157,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .left-part-links {
-  margin-right: 30px;
+  margin-right: 58px;
 }
 
 .contact-phone {
@@ -237,7 +252,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*WELCOME PART CARDS*/
 #welcome-cards {
   background-color: #222222;
-  padding: 40px 0;
+  padding: 62px 0;
 }
 
 .img-circle {
@@ -266,7 +281,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF;
   font-size: 48px;
   line-height: 64px;
-  padding-bottom: 112px;
+  padding-bottom: 80px;
 }
 
 .card-title h5 {
@@ -300,10 +315,35 @@ input[type=number]::-webkit-outer-spin-button {
 /*ADVANTAGES PART*/
 #parfums-advantages {
   background-color: #ECF8FF;
+  position: relative;
+}
+
+#parfums-advantages:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/waves/wave-1.png");
+  background-position-y: 60px;
+  background-repeat: no-repeat;
+}
+
+#parfums-advantages:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -460px;
+  right: 0;
+  left: 0;
+  background-image: url("../images/waves/wave-2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .advantages-title {
-  padding: 70px;
+  padding: 114px 60px 75px;
 }
 
 .advantages-title h1 {
@@ -315,13 +355,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .parfums-advantages-padding {
-  padding: 20px 110px;
+  padding: 0 210px;
 }
 
 .parfum-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 30px;
+  margin-bottom: 75px;
+}
+
+.parfum-description:last-child {
+  margin-bottom: 0;
 }
 
 .image-rounded {
@@ -363,7 +407,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*SLIDER HEADING*/
 #parfum-catalog-head {
-  padding: 80px 0 30px;
+  padding: 197px 0 93px;
   background-color: #ECF8FF;
 }
 
@@ -385,6 +429,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-bottom: dashed;
   border-width: 1px;
   margin: 20px 50px;
+  margin-bottom: 0;
   color: #222222;
 }
 
@@ -439,7 +484,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cards-carousel-padding {
-  padding: 20px 69px;
+  padding: 0 210px 80px;
 }
 
 .grid-for-mobile {
@@ -574,7 +619,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*BEING SALES SECTION*/
 #being-sales {
-  padding-bottom: 295px;
+  padding-bottom: 284px;
   background-color: #222222;
 }
 
@@ -609,7 +654,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* TWO PARTS*/
 #buy-parfums-for-commerce {
-  margin-top: -200px;
+  margin-top: -260px;
   margin-bottom: -200px;
   padding-bottom: 21px;
 }
@@ -622,14 +667,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .right-part {
   background-color: #ECF8FF;
-  background-image: url("../images/man-with-parfum.png");
+  background-image: url("../images/being-diler/man-waves.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   margin: 12px;
   box-shadow: 0 -3px 20px 0 #00408561;
-  padding: 43px 170px 28px 22px;
+  padding: 60px 240px 60px 43px;
   color: black;
+  border-radius: 5px;
 }
 
 .right-part h3 {
@@ -668,9 +714,14 @@ input[type=number]::-webkit-outer-spin-button {
 .left-part {
   margin: 12px;
   box-shadow: 0 -3px 20px 0 #00408561;
-  padding: 43px 36px 28px 22px;
+  padding: 60px 43px;
   color: #FFFFFF;
   background-color: #2D9CDB;
+  border-radius: 5px;
+  background-image: url("../images/being-diler/waves.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 .left-part h3 {
@@ -697,13 +748,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*HOW IT WORKS*/
 #how-it-works {
-  padding-top: 200px;
+  padding-top: 170px;
   background-color: #ECF8FF;
 }
 
 .how-it-works-heading {
   text-align: center;
-  padding: 60px 0 65px;
+  padding: 105px 0 30px;
 }
 
 .how-it-works-heading h1 {
@@ -716,7 +767,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
-  padding: 20px 40px;
+  padding: 0 105px;
 }
 
 .how-it-works-cards h5 {
@@ -724,8 +775,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .work-info-cards {
-  padding: 63px 12px 9px;
-  margin: 74px 20px;
+  padding: 20px;
+  margin: 80px 20px;
   background-color: transparent;
   border: solid;
   border-color: #2d9cdb33;
@@ -743,7 +794,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 74px;
   margin: auto;
   position: relative;
-  margin-top: -99px;
+  margin-top: -60px;
   background-color: #2D9CDB;
   color: white;
   border-radius: 35px;
@@ -755,7 +806,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cards-work-content {
-  padding-top: 55px;
+  padding: 0;
+  padding-top: 50px;
 }
 
 .cards-work-content h5 {
@@ -768,6 +820,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: normal;
   font-size: 18px;
   color: rgba(34, 34, 34, 0.7);
+  padding: 0;
 }
 
 /*MAP HEADING*/
@@ -777,7 +830,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .map-title {
   text-align: center;
-  padding: 87px 0 105px;
+  padding: 120px 0 70px;
   margin: auto;
 }
 
@@ -805,7 +858,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .map-part {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .map-link {
@@ -871,7 +924,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .accordions {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .accordions .accordion-title {
@@ -917,7 +970,7 @@ input[type=number]::-webkit-outer-spin-button {
   grid-template-columns: 1fr;
   text-align: center;
   color: #222222;
-  padding: 62px 0 20px;
+  padding: 140px 0 20px;
 }
 
 .footer-part a {

@@ -16,6 +16,10 @@
     background-color: #333333 !important;
   }
 
+  .navbar-brand {
+    margin-right: 43px;
+  }
+
   .left-part-navigation {
     display: grid;
     position: fixed;
