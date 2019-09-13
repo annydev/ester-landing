@@ -202,7 +202,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 173px 79px 134px;
 }
 
-.big-heading h1 {
+.big-heading .big-h1 {
   font-size: 48px;
 }
 
@@ -253,6 +253,11 @@ input[type=number]::-webkit-outer-spin-button {
 #welcome-cards {
   background-color: #222222;
   padding: 62px 0;
+}
+
+.big-h1 {
+  font-size: 48px;
+  font-weight: 600;
 }
 
 .img-circle {
@@ -348,7 +353,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 114px 60px 75px;
 }
 
-.advantages-title h1 {
+.advantages-title .big-h1 {
   color: #222222;
   text-align: center;
   font-weight: 600;
@@ -415,7 +420,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #ECF8FF;
 }
 
-.catalog-title h1 {
+.catalog-title .big-h1 {
   text-align: center;
   font-weight: 600;
   font-size: 48px;
@@ -624,7 +629,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF;
 }
 
-.feedback-heading h1 {
+.feedback-heading .big-h1 {
   font-weight: 600;
   font-size: 48px;
 }
@@ -645,7 +650,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFFFFF;
 }
 
-.being-sales-heading h1 {
+.being-sales-heading .big-h1 {
   font-weight: 600;
   font-size: 48px;
 }
@@ -773,7 +778,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 105px 0 30px;
 }
 
-.how-it-works-heading h1 {
+.how-it-works-heading .big-h1 {
   font-weight: 600;
   font-size: 48px;
   color: #222222;
@@ -850,7 +855,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: auto;
 }
 
-.map-title h1 {
+.map-title .big-h1 {
   font-weight: 600;
   font-size: 48px;
 }
