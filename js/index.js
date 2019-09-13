@@ -63,11 +63,33 @@ var IndexModule = (function() {
         body: formData
       })
       .then(function(response) {
-        console.log('Success!', response);
+        console.log('Google Success!', response);
       })
       .catch(function(error) {
-        console.error('Error!', error.message);
+        console.error('Google Error!', error.message);
       });
+  }
+
+  function sendDataToTelegram(request) {
+    var apiKey = "924565132:AAFCoxRqMeqdnL4TKj5IEzpNbmwQ56KMgBI";
+    var channelName = "@ester_autoparfume";
+    var message = "";
+
+    for (var key in request) {
+      message += key + ": " + request[key] + "\n";
+    }
+
+    var url = "https://api.telegram.org/bot" + apiKey + "/sendMessage?chat_id=" + channelName + "&text=" + encodeURI(message);
+
+    $.get(url, function(data) {
+      console.log('Telegram Success!', data);
+    });
+  }
+
+  function sendRequest(request){
+    //sendDataToGoogle(request);
+    sendDataToTelegram(request);
+    //window.location.href = window.location.href + "multumesc";
   }
 
   function isFormValid(currentModal) {
@@ -117,18 +139,15 @@ var IndexModule = (function() {
           "sheetName": "OrderPerfume"
         };
 
-        sendDataToGoogle(request);
-
-        currentModal.modal('hide');
-        window.location.href = window.location.href + "multumesc";
+        sendRequest(request);
       }
     });
 
-    $("#orderBeingSalesButton").click(function(){
+    $("#orderBeingSalesButton").click(function() {
       var chosenButton = $(this);
       var currentModal = chosenButton.closest(".modal");
 
-      if (isFormValid(currentModal)){
+      if (isFormValid(currentModal)) {
         var body = chosenButton.closest(".modal-body");
 
         var request = {
@@ -138,16 +157,15 @@ var IndexModule = (function() {
           "sheetName": "BeingSales"
         };
 
-        sendDataToGoogle(request);
-        window.location.href = window.location.href + "multumesc";
+        sendRequest(request);
       }
     });
 
-    $("#orderPartButton").click(function(){
+    $("#orderPartButton").click(function() {
       var chosenButton = $(this);
       var currentModal = chosenButton.closest(".modal");
 
-      if (isFormValid(currentModal)){
+      if (isFormValid(currentModal)) {
         var body = chosenButton.closest(".modal-body");
 
         var request = {
@@ -157,8 +175,7 @@ var IndexModule = (function() {
           "sheetName": "OrderPart"
         };
 
-        sendDataToGoogle(request);
-        window.location.href = window.location.href + "multumesc";
+        sendRequest(request);
       }
     });
   }
