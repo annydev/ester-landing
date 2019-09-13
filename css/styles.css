@@ -246,7 +246,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   bottom: 30px;
   right: -5px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /*WELCOME PART CARDS*/
@@ -875,7 +875,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .map-top {
-  top: 95px;
+  top: 120px;
 }
 
 .map-part {

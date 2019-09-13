@@ -70,7 +70,7 @@
     padding: 0;
   }
 
-  .big-heading h1 {
+  .big-heading .big-h1 {
     padding: 0;
     font-size: 32px;
   }
@@ -121,7 +121,7 @@
     padding: 0;
   }
 
-  .advantages-title h1 {
+  .advantages-title .big-h1 {
     line-height: 43px;
     margin: auto;
   }
@@ -150,7 +150,7 @@
     padding: 140px 34px 20px;
   }
 
-  .advantages-title h1 {
+  .advantages-title .big-h1 {
     font-size: 32px;
   }
 
@@ -159,7 +159,7 @@
     padding: 127px 20px 30px;
   }
 
-  .catalog-title h1 {
+  .catalog-title .big-h1 {
     text-align: center;
     font-size: 32px;
     line-height: 43px;
@@ -265,12 +265,12 @@
     padding: 75px 0 40px;
   }
 
-  .feedback-heading h1 {
+  .feedback-heading .big-h1 {
     font-size: 30px;
   }
 
   /*BUY PARFUM FOR SALE*/
-  .being-sales-heading h1 {
+  .being-sales-heading .big-h1 {
     font-size: 30px;
   }
 
@@ -306,7 +306,7 @@
     padding: 60px 44px 0;
   }
 
-  .how-it-works-heading h1 {
+  .how-it-works-heading .big-h1 {
     font-size: 30px;
   }
 
@@ -331,7 +331,7 @@
     padding: 87px 0 35px;
   }
 
-  .map-title h1 {
+  .map-title .big-h1 {
     font-size: 32px;
   }
 
