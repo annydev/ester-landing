@@ -328,6 +328,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url("../images/waves/wave-1.png");
   background-position-y: 60px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #parfums-advantages:after {
@@ -340,6 +341,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url("../images/waves/wave-2.png");
   background-position: bottom;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .advantages-title {
@@ -565,6 +567,20 @@ input[type=number]::-webkit-outer-spin-button {
 /*CLIENTS FEEDBACK*/
 #client-feedback {
   background-color: #222222;
+  position: relative;
+}
+
+#client-feedback::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -145px;
+  background-image: url(../images/waves/wave-3.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .client-card {
@@ -591,6 +607,8 @@ input[type=number]::-webkit-outer-spin-button {
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   padding: 0 58px;
+  position: relative;
+  z-index: 1;
 }
 
 .client-body-text {
@@ -1055,7 +1073,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal .vector-button:hover {
-    background-color: #2D9CDB !important;
+  background-color: #2D9CDB !important;
 }
 
 .modal .vector-button-icon {
