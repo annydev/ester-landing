@@ -120,7 +120,7 @@ var IndexModule = (function() {
         sendDataToGoogle(request);
 
         currentModal.modal('hide');
-        window.location.href = "/multumesc";
+        window.location.href = window.location.href + "multumesc";
       }
     });
 
@@ -139,7 +139,7 @@ var IndexModule = (function() {
         };
 
         sendDataToGoogle(request);
-        window.location.href = "/multumesc";
+        window.location.href = window.location.href + "multumesc";
       }
     });
 
@@ -158,7 +158,7 @@ var IndexModule = (function() {
         };
 
         sendDataToGoogle(request);
-        window.location.href = "/multumesc";
+        window.location.href = window.location.href + "multumesc";
       }
     });
   }
