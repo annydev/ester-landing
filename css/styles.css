@@ -222,9 +222,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .active-button-white:hover {
-  border: 1px solid  #FFFFFF;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
   background: #2D9CDB;
+}
+
+#beingSalesButton {
+  position: fixed;
+  bottom: 30px;
+  right: -5px;
+  z-index: 10000;
 }
 
 /*WELCOME PART CARDS*/
@@ -490,6 +497,26 @@ input[type=number]::-webkit-outer-spin-button {
 .vector-button-icon {
   height: 17px;
   width: 8.5px;
+}
+
+.vector-button:hover {
+  background-color: #2D9CDB;
+}
+
+.vector-button .vector-button-white {
+  display: none;
+}
+
+.vector-button:hover .vector-button-white {
+  display: block;
+}
+
+.vector-button-icon {
+  display: block;
+}
+
+.vector-button .vector-button-icon:hover {
+  display: none;
 }
 
 /*CLIENTS FEEDBACK*/

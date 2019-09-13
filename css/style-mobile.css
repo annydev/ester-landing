@@ -11,7 +11,7 @@
   #navigation-bar {
     border: none;
   }
-  
+
   #navigation-bar.open {
     background-color: #333333 !important;
   }
@@ -44,6 +44,11 @@
     text-align: center;
     left: 0;
     right: 0;
+  }
+
+  #beingSalesButton {
+    bottom: 15px;
+    right: -20px;
   }
 
   /*WELCOME PART*/
@@ -333,8 +338,8 @@
   .accordions .accordion-title {
     padding: 25px 15px;
   }
-}
 
-.modal-heading h4 {
-  padding: 0;
+  .modal-heading h4 {
+    padding: 0;
+  }
 }
