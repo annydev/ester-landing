@@ -346,4 +346,19 @@
   .modal-heading h4 {
     padding: 0;
   }
+
+  .modal-dialog {
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+  }
+
+  .certificate-container .previous-certificate-button {
+    left: -5px;
+  }
+
+  .certificate-container .next-certificate-button {
+    right: -5px;
+  }
 }
