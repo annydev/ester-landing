@@ -246,7 +246,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   bottom: 30px;
   right: -5px;
-  z-index: 10000;
+  z-index: 1;
 }
 
 /*WELCOME PART CARDS*/
@@ -356,6 +356,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .parfums-advantages-padding {
   padding: 0 210px;
+  position: relative;
+  z-index: 1;
 }
 
 .parfum-description {
@@ -552,16 +554,12 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
+.vector-button:hover .vector-button-icon {
+  display: none;
+}
+
 .vector-button:hover .vector-button-white {
   display: block;
-}
-
-.vector-button-icon {
-  display: block;
-}
-
-.vector-button .vector-button-icon:hover {
-  display: none;
 }
 
 /*CLIENTS FEEDBACK*/
@@ -1052,6 +1050,18 @@ input[type=number]::-webkit-outer-spin-button {
   margin: auto;
 }
 
+.modal .vector-button {
+  padding: 13px;
+}
+
+.modal .vector-button:hover {
+    background-color: #2D9CDB !important;
+}
+
+.modal .vector-button-icon {
+  margin: 0 4px;
+}
+
 .select-parfums {
   margin-bottom: 15px;
 }
@@ -1112,4 +1122,43 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: white;
 }
 
-/* SELECT INPUT */
+/* BACK-SECTION */
+.back-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ECF8FF;
+}
+
+.back-section .logo-container {
+  padding: 25px 100px;
+}
+
+.back-section .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.back-section .back-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.back-section .back-button {
+  background: #2D9CDB;
+  border-radius: 5px;
+  padding: 23px 100px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

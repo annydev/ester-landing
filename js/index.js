@@ -130,7 +130,7 @@ $(".mode-footer-button").click(function() {
     currentModal.find(".if-statement").removeClass("d-none");
   } else {
     currentModal.modal('hide');
-    $('#afterOrder').modal('show');
+    window.location.href = "/multumesc.html";
   }
 });
 
