@@ -17,7 +17,7 @@
   }
 
   .navbar-brand {
-    margin-right: 43px;
+    margin-right: 20px;
   }
 
   .left-part-navigation {
@@ -56,6 +56,10 @@
   }
 
   /*WELCOME PART*/
+  #welcome-part {
+    padding-bottom: 0;
+  }
+
   .welcome-text {
     width: 100%;
     text-align: center;
@@ -91,6 +95,10 @@
   }
 
   /*WELCOME CARDS*/
+  #welcome-cards {
+    padding: 0;
+  }
+
   .cards-centering {
     display: grid;
     grid-template-columns: 1fr;
@@ -102,7 +110,7 @@
   }
 
   .cards-title {
-    padding: 120px 0 40px;
+    padding: 62px 0 40px;
     text-align: center;
     line-height: 43px;
     font-size: 32px;
@@ -354,11 +362,39 @@
     transform: unset !important;
   }
 
+  .modal-content {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+
+  body.navbar-open jdiv,
+  body.modal-open jdiv {
+    display: none;
+  }
+
   .certificate-container .previous-certificate-button {
     left: -5px;
   }
 
   .certificate-container .next-certificate-button {
     right: -5px;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .navbar-brand {
+    margin-right: 15px;
+  }
+
+  .nav-link {
+    padding-right: 15px;
+  }
+
+  .navigation-menu {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
