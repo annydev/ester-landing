@@ -10,7 +10,7 @@ var IndexModule = (function() {
     if (target.length) {
       $('html,body').animate({
         scrollTop: target.offset().top - headerHeight
-      }, 100);
+      }, 500);
       return false;
     }
   }
@@ -221,7 +221,6 @@ var IndexModule = (function() {
 
     $("a[href*=\\#]:not([href=\\#])").click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
         scrollToAnchor(this.hash);
       }
     });
