@@ -556,6 +556,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .vector-button:hover {
   background-color: #2D9CDB;
+  border-color: #2D9CDB;
 }
 
 .vector-button .vector-button-white {
@@ -567,7 +568,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .vector-button:hover .vector-button-white {
-  display: block;
+  display: initial;
 }
 
 /*CLIENTS FEEDBACK*/
