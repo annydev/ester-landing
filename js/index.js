@@ -86,7 +86,7 @@ var IndexModule = (function() {
     });
   }
 
-  function sendRequest(request){
+  function sendRequest(request) {
     sendDataToGoogle(request);
     sendDataToTelegram(request);
     window.location.href = window.location.href + "multumesc";
@@ -139,6 +139,8 @@ var IndexModule = (function() {
           "sheetName": "OrderPerfume"
         };
 
+        chosenButton.attr("disabled", true);
+
         sendRequest(request);
       }
     });
@@ -157,6 +159,8 @@ var IndexModule = (function() {
           "sheetName": "BeingSales"
         };
 
+        chosenButton.attr("disabled", true);
+
         sendRequest(request);
       }
     });
@@ -174,6 +178,8 @@ var IndexModule = (function() {
           "address": body.find('input[name="address"]').val(),
           "sheetName": "OrderPart"
         };
+
+        chosenButton.attr("disabled", true);
 
         sendRequest(request);
       }
@@ -334,6 +340,15 @@ var IndexModule = (function() {
       currentCatalogText.toggleClass("opened");
       showDescriptionBtn.toggleClass("d-none");
       hideDescriptionBtn.toggleClass("d-none");
+    });
+
+    $(".sending-form .form-control").on("keydown", function(e) {
+      if (e.keyCode == 13) {
+        var modalBody = $(e.currentTarget).closest(".modal-body");
+        var button = modalBody.find(".mode-footer-button");
+
+        button.trigger("click");
+      }
     });
 
     bindFormSending();
