@@ -261,6 +261,7 @@ var IndexModule = (function() {
 
       currentModal.find("input").val("");
       currentModal.find("select").val("");
+      currentModal.find('.select-parfums').prop("selectedIndex", 0).selectric('refresh');
       currentModal.find(".if-statement").addClass("d-none");
     });
 

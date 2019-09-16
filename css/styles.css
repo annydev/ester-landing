@@ -426,6 +426,11 @@ input[type=number]::-webkit-outer-spin-button {
   color: #222222;
 }
 
+.gender-choosing-container {
+  position: relative;
+  z-index: 1;
+}
+
 .gender-choosing-buttons {
   font-weight: 500;
   font-size: 24px;
