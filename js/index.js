@@ -289,6 +289,8 @@ var IndexModule = (function() {
 
       previousImage.removeClass("d-none");
       previousImage.addClass("active");
+
+      $(".certificate-images").attr("href", previousImage.attr("src"));
     });
 
     $(".next-certificate-button").click(function() {
@@ -305,6 +307,8 @@ var IndexModule = (function() {
 
       nextImage.removeClass("d-none");
       nextImage.addClass("active");
+
+      $(".certificate-images").attr("href", nextImage.attr("src"));
     });
 
     $(".map-link").click(function() {
