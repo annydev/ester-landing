@@ -89,7 +89,7 @@ var IndexModule = (function() {
   function sendRequest(request) {
     sendDataToGoogle(request);
     sendDataToTelegram(request);
-    window.location.href = "/multumesc";
+    window.location.href = "/multumesc.html";
   }
 
   function isFormValid(currentModal) {
