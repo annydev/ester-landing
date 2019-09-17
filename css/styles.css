@@ -552,6 +552,7 @@ input[type=number]::-webkit-outer-spin-button {
 .vector-button-icon {
   height: 17px;
   width: 8.5px;
+  display: block;
 }
 
 .vector-button:hover {
@@ -568,7 +569,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .vector-button:hover .vector-button-white {
-  display: initial;
+  display: block;
 }
 
 /*CLIENTS FEEDBACK*/
