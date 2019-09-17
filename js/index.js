@@ -262,6 +262,19 @@ var IndexModule = (function() {
     });
   }
 
+  function bindMobileKeyboard() {
+    $(document).ready(function() {
+      var _originalSize = $(window).width() + $(window).height();
+      $(window).resize(function() {
+        if ($(window).width() + $(window).height() != _originalSize) {
+          $("body").addClass("keyboard-open");
+        } else {
+          $("body").removeClass("keyboard-open");
+        }
+      });
+    });
+  }
+
   self.Init = function() {
     window.onload = function() {
       setTimeout(function() {
@@ -373,6 +386,7 @@ var IndexModule = (function() {
     bindFormSending();
     bindCatalogButtons();
     bindCertificateButtons();
+    bindMobileKeyboard();
   };
 
   return self;

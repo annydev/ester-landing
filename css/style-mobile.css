@@ -375,6 +375,14 @@
     display: none;
   }
 
+  body.keyboard-open .modal-dialog  {
+    margin: 0 !important;
+  }
+
+  body.keyboard-open .modal-content {
+    position: initial !important;
+  }
+
   .certificate-container .previous-certificate-button {
     left: -5px;
   }
