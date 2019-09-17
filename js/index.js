@@ -72,7 +72,7 @@ var IndexModule = (function() {
 
   function sendDataToTelegram(request) {
     var apiKey = "924565132:AAFCoxRqMeqdnL4TKj5IEzpNbmwQ56KMgBI";
-    var channelName = "@ester_autoparfume";
+    var channelName = "-1001485149457";
     var message = "";
 
     for (var key in request) {
