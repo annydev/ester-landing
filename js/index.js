@@ -89,7 +89,7 @@ var IndexModule = (function() {
   function sendRequest(request) {
     sendDataToGoogle(request);
     sendDataToTelegram(request);
-    window.location.href = window.location.href + "multumesc";
+    window.location.href = "/multumesc";
   }
 
   function isFormValid(currentModal) {
@@ -99,6 +99,42 @@ var IndexModule = (function() {
     }
 
     return true;
+  }
+
+  function onPreviousCertificateClick() {
+    var activeImage = $(".certificate-images .active");
+
+    activeImage.addClass("d-none");
+    activeImage.removeClass("active");
+
+    var previousImage = activeImage.prev();
+
+    if (previousImage.length === 0) {
+      previousImage = $(".certificate-images img").last();
+    }
+
+    previousImage.removeClass("d-none");
+    previousImage.addClass("active");
+
+    $(".certificate-images").attr("href", previousImage.attr("src"));
+  }
+
+  function onNextCertificateClick() {
+    var activeImage = $(".certificate-images .active");
+
+    activeImage.addClass("d-none");
+    activeImage.removeClass("active");
+
+    var nextImage = activeImage.next();
+
+    if (nextImage.length === 0) {
+      nextImage = $(".certificate-images img").first();
+    }
+
+    nextImage.removeClass("d-none");
+    nextImage.addClass("active");
+
+    $(".certificate-images").attr("href", nextImage.attr("src"));
   }
 
   function bindFormSending() {
@@ -136,7 +172,7 @@ var IndexModule = (function() {
           "phone": body.find('input[name="phone"]').val(),
           "address": body.find('input[name="address"]').val(),
           "perfume": parfumes[body.find('.select-parfums').val()],
-          "sheetName": "OrderPerfume"
+          "sheetName": "Zakaz.parfum"
         };
 
         chosenButton.attr("disabled", true);
@@ -156,7 +192,7 @@ var IndexModule = (function() {
           "name": body.find('input[name="name"]').val(),
           "phone": body.find('input[name="phone"]').val(),
           "address": body.find('input[name="address"]').val(),
-          "sheetName": "BeingSales"
+          "sheetName": "Diler"
         };
 
         chosenButton.attr("disabled", true);
@@ -176,13 +212,53 @@ var IndexModule = (function() {
           "name": body.find('input[name="name"]').val(),
           "phone": body.find('input[name="phone"]').val(),
           "address": body.find('input[name="address"]').val(),
-          "sheetName": "OrderPart"
+          "sheetName": "Zakaz.partia"
         };
 
         chosenButton.attr("disabled", true);
 
         sendRequest(request);
       }
+    });
+  }
+
+  function bindCatalogButtons() {
+    $(".next-button").click(function() {
+      var currentButton = $(this);
+      onNextAction(currentButton);
+    });
+
+    $(".catalog-image").on("swipeleft", function(e, data) {
+      var currentImage = $(this);
+      onNextAction(currentImage);
+    });
+
+    $(".previous-button").click(function() {
+      var currentButton = $(this);
+      onPreviousAction(currentButton);
+    });
+
+    $(".catalog-image").on("swiperight", function(e, data) {
+      var currentImage = $(this);
+      onPreviousAction(currentImage);
+    });
+  }
+
+  function bindCertificateButtons() {
+    $(".previous-certificate-button").click(function() {
+      onPreviousCertificateClick();
+    });
+
+    $(".next-certificate-button").click(function() {
+      onNextCertificateClick();
+    });
+
+    $(".certificate-images").on("swipeleft", function(e, data) {
+      onNextCertificateClick();
+    });
+
+    $(".certificate-images").on("swiperight", function(e, data) {
+      onPreviousCertificateClick();
     });
   }
 
@@ -225,26 +301,6 @@ var IndexModule = (function() {
       }
     });
 
-    $(".next-button").click(function() {
-      var currentButton = $(this);
-      onNextAction(currentButton);
-    });
-
-    $(".catalog-image").on("swipeleft", function(e, data) {
-      var currentImage = $(this);
-      onNextAction(currentImage);
-    });
-
-    $(".previous-button").click(function() {
-      var currentButton = $(this);
-      onPreviousAction(currentButton);
-    });
-
-    $(".catalog-image").on("swiperight", function(e, data) {
-      var currentImage = $(this);
-      onPreviousAction(currentImage);
-    });
-
     $(".man").click(function() {
       var clickedButton = $(this);
       $(".woman").removeClass("active");
@@ -281,42 +337,6 @@ var IndexModule = (function() {
       chosenModal.modal('show');
     });
 
-    $(".previous-certificate-button").click(function() {
-      var activeImage = $(".certificate-images .active");
-
-      activeImage.addClass("d-none");
-      activeImage.removeClass("active");
-
-      var previousImage = activeImage.prev();
-
-      if (previousImage.length === 0) {
-        previousImage = $(".certificate-images img").last();
-      }
-
-      previousImage.removeClass("d-none");
-      previousImage.addClass("active");
-
-      $(".certificate-images").attr("href", previousImage.attr("src"));
-    });
-
-    $(".next-certificate-button").click(function() {
-      var activeImage = $(".certificate-images .active");
-
-      activeImage.addClass("d-none");
-      activeImage.removeClass("active");
-
-      var nextImage = activeImage.next();
-
-      if (nextImage.length === 0) {
-        nextImage = $(".certificate-images img").first();
-      }
-
-      nextImage.removeClass("d-none");
-      nextImage.addClass("active");
-
-      $(".certificate-images").attr("href", nextImage.attr("src"));
-    });
-
     $(".map-link").click(function() {
       var mapUrl = "https://www.google.com/maps/d/embed?mid=1zI_d27X44dhCKBrOfsfduxqKTWI6_JXD&ll";
 
@@ -351,6 +371,8 @@ var IndexModule = (function() {
     });
 
     bindFormSending();
+    bindCatalogButtons();
+    bindCertificateButtons();
   };
 
   return self;
