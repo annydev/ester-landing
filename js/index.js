@@ -92,10 +92,10 @@ var IndexModule = (function() {
 
     switch (language) {
       case "ro":
-        window.location.href = "ester-landing/multumesc-ro.html";
+        window.location = "/multumesc-ro.html";
         break;
       default:
-        window.location.href = "ester-landing/multumesc.html";
+        window.location = "/multumesc.html";
         break;
     }
   }
