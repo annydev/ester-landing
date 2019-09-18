@@ -86,10 +86,18 @@ var IndexModule = (function() {
     });
   }
 
-  function sendRequest(request) {
+  function sendRequest(request, language) {
     sendDataToGoogle(request);
     sendDataToTelegram(request);
-    window.location.href = "/multumesc.html";
+
+    switch (language) {
+      case "ro":
+        window.location.href = "ester-landing/multumesc-ro.html";
+        break;
+      default:
+        window.location.href = "ester-landing/multumesc.html";
+        break;
+    }
   }
 
   function isFormValid(currentModal) {
@@ -177,7 +185,9 @@ var IndexModule = (function() {
 
         chosenButton.attr("disabled", true);
 
-        sendRequest(request);
+        var language = chosenButton.attr("language");
+
+        sendRequest(request, language);
       }
     });
 
@@ -197,7 +207,9 @@ var IndexModule = (function() {
 
         chosenButton.attr("disabled", true);
 
-        sendRequest(request);
+        var language = chosenButton.attr("language");
+
+        sendRequest(request, language);
       }
     });
 
@@ -217,7 +229,9 @@ var IndexModule = (function() {
 
         chosenButton.attr("disabled", true);
 
-        sendRequest(request);
+        var language = chosenButton.attr("language");
+
+        sendRequest(request, language);
       }
     });
   }
