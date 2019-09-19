@@ -689,6 +689,12 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0;
 }
 
+.right-part,
+.left-part {
+  display: flex;
+  flex-direction: column;
+}
+
 .right-part {
   background-color: #ECF8FF;
   background-image: url("../images/being-diler/man-waves.png");
@@ -709,6 +715,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .right-part p {
+  flex-grow: 1;
   color: #222222;
   font-weight: 300;
   font-size: 20px;
@@ -754,6 +761,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .left-part p {
+  flex-grow: 1;
   font-weight: 300;
   font-size: 20px;
 }
