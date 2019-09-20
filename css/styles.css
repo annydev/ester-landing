@@ -885,6 +885,10 @@ input[type=number]::-webkit-outer-spin-button {
   color: black;
 }
 
+.sticky-top {
+  z-index: 0;
+}
+
 .map-top {
   top: 120px;
 }

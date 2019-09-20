@@ -92,10 +92,10 @@ var IndexModule = (function() {
 
     switch (language) {
       case "ro":
-        window.location.href = "https://annydev.github.io/ester-landing/multumesc-ro.html";
+        window.location.href = "/multumesc-ro.html";
         break;
       default:
-        window.location.href = "https://annydev.github.io/ester-landing/multumesc.html";
+        window.location.href = "/multumesc.html";
         break;
     }
   }
