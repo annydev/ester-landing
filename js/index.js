@@ -50,52 +50,13 @@ var IndexModule = (function() {
     previousCatalogSliderElement.removeClass("d-none");
   }
 
-  function sendDataToGoogle(request) {
-    var scriptURL = 'https://script.google.com/macros/s/AKfycbzFSecFqi-z873hivF5_09Uri-FNjQSK5OSWVsuh8sAn-Z57tE/exec';
-    var formData = new FormData();
-
-    for (var key in request) {
-      formData.append(key, request[key]);
-    }
-
-    fetch(scriptURL, {
-        method: 'POST',
-        body: formData
-      })
-      .then(function(response) {
-        console.log('Google Success!', response);
-      })
-      .catch(function(error) {
-        console.error('Google Error!', error.message);
-      });
-  }
-
-  function sendDataToTelegram(request) {
-    var apiKey = "924565132:AAFCoxRqMeqdnL4TKj5IEzpNbmwQ56KMgBI";
-    var channelName = "-1001485149457";
-    var message = "";
-
-    for (var key in request) {
-      message += key + ": " + request[key] + "\n";
-    }
-
-    var url = "https://api.telegram.org/bot" + apiKey + "/sendMessage?chat_id=" + channelName + "&text=" + encodeURI(message);
-
-    $.get(url, function(data) {
-      console.log('Telegram Success!', data);
-    });
-  }
-
   function sendRequest(request, language) {
-    sendDataToGoogle(request);
-    sendDataToTelegram(request);
-
     switch (language) {
       case "ro":
-        window.location.href = "/multumesc-ro.html";
+        window.location.href = "ester-landing/multumesc-ro.html";
         break;
       default:
-        window.location.href = "/multumesc.html";
+        window.location.href = "ester-landing/multumesc.html";
         break;
     }
   }
